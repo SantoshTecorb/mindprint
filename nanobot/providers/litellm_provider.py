@@ -7,6 +7,7 @@ from typing import Any
 
 import litellm
 from litellm import acompletion
+from loguru import logger
 
 from nanobot.providers.base import LLMProvider, LLMResponse, ToolCallRequest
 from nanobot.providers.registry import find_by_model, find_gateway
@@ -225,6 +226,21 @@ class LiteLLMProvider(LLMProvider):
             response = await acompletion(**kwargs)
             return self._parse_response(response)
         except Exception as e:
+            # Handle tool calling errors gracefully
+            error_str = str(e)
+            if "tool_use_failed" in error_str or "BadRequestError" in error_str:
+                logger.warning("Tool calling failed, retrying without tools: {}", error_str)
+                # Retry without tools if tool calling fails
+                kwargs_without_tools = {k: v for k, v in kwargs.items() if k not in ["tools", "tool_choice"]}
+                try:
+                    response = await acompletion(**kwargs_without_tools)
+                    return self._parse_response(response)
+                except Exception as retry_e:
+                    logger.error("Retry without tools also failed: {}", retry_e)
+                    return LLMResponse(
+                        content=f"Error calling LLM: {str(retry_e)}",
+                        finish_reason="error",
+                    )
             # Return error as content for graceful handling
             return LLMResponse(
                 content=f"Error calling LLM: {str(e)}",
