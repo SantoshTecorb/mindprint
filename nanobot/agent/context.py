@@ -50,6 +50,10 @@ Skills with available="false" need dependencies installed first - you can try in
 
 {skills_summary}""")
 
+        # 3. MindPrint Cognitive Persona
+        persona = self._load_active_persona()
+        if persona:
+            parts.append(f"# Active Cognitive Persona\n\n{persona}")
         return "\n\n---\n\n".join(parts)
     
     def _get_identity(self) -> str:
@@ -101,6 +105,29 @@ Reply directly with text for conversations. Only use the 'message' tool to send 
                 parts.append(f"## {filename}\n\n{content}")
         
         return "\n\n".join(parts) if parts else ""
+
+    def _load_active_persona(self) -> str | None:
+        """Load all personas in from the personas/ directory recursively."""
+        try:
+            persona_dir = self.workspace / "personas"
+            if not persona_dir.exists():
+                return None
+            
+            parts = []
+            # Recursively find all .md files in the personas directory
+            for md_file in persona_dir.rglob("*.md"):
+                try:
+                    content = md_file.read_text(encoding="utf-8")
+                    # Use the relative path as a header to distinguish assets
+                    rel_path = md_file.relative_to(persona_dir)
+                    parts.append(f"## Persona Asset: {rel_path}\n\n{content}")
+                except Exception as e:
+                    continue
+            
+            return "\n\n".join(parts) if parts else None
+        except Exception:
+            pass
+        return None
     
     def build_messages(
         self,

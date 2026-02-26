@@ -295,6 +295,16 @@ class MCPServerConfig(Base):
     tool_timeout: int = 30  # Seconds before a tool call is cancelled
 
 
+class MindPrintConfig(Base):
+    """MindPrint Cognitive Marketplace configuration."""
+
+    enabled: bool = False
+    database_url: str = "postgresql://nanobot:password@localhost/memorydb"
+    user_id: str = ""  # Persistent unique installation ID (auto-generated)
+    auto_distill: bool = True  # Enable background cognition generation
+    active_persona_id: str | None = None  # Currently adopted cognitive framework
+
+
 class ToolsConfig(Base):
     """Tools configuration."""
 
@@ -302,6 +312,7 @@ class ToolsConfig(Base):
     exec: ExecToolConfig = Field(default_factory=ExecToolConfig)
     restrict_to_workspace: bool = False  # If true, restrict all tool access to workspace directory
     mcp_servers: dict[str, MCPServerConfig] = Field(default_factory=dict)
+    mindprint: MindPrintConfig = Field(default_factory=MindPrintConfig)
 
 
 class Config(BaseSettings):

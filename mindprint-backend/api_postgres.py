@@ -31,11 +31,46 @@ class MemoryData(Base):
     file_hash = Column(String(32), nullable=False)
     scanned_at = Column(DateTime, default=datetime.utcnow)
     user_id = Column(String(100))
-    extra_metadata = Column(Text)  # Renamed to avoid SQLAlchemy conflict
+    extra_metadata = Column(Text)
     
     __table_args__ = (
         UniqueConstraint('file_path', 'file_hash', name='uix_file_path_hash'),
     )
+
+class Rental(Base):
+    __tablename__ = 'rentals'
+    
+    id = Column(Integer, primary_key=True)
+    token = Column(String(100), unique=True, nullable=False)
+    seller_user_id = Column(String(100), nullable=False)
+    created_at = Column(DateTime, default=datetime.utcnow)
+    expires_at = Column(DateTime)
+
+class Seller(Base):
+    __tablename__ = 'sellers'
+    
+    user_id = Column(String(100), primary_key=True)
+    hostname = Column(Text)
+    os_name = Column(Text)
+    os_version = Column(Text)
+    python_version = Column(Text)
+    install_path = Column(Text)
+    first_seen = Column(DateTime, default=datetime.utcnow)
+    last_seen = Column(DateTime, default=datetime.utcnow)
+    metadata_json = Column(Text) # JSON string
+
+class Buyer(Base):
+    __tablename__ = 'buyers'
+    
+    user_id = Column(String(100), primary_key=True)
+    hostname = Column(Text)
+    os_name = Column(Text)
+    os_version = Column(Text)
+    python_version = Column(Text)
+    install_path = Column(Text)
+    first_seen = Column(DateTime, default=datetime.utcnow)
+    last_seen = Column(DateTime, default=datetime.utcnow)
+    metadata_json = Column(Text) # JSON string
 
 def get_db_connection():
     """Get direct PostgreSQL connection"""
@@ -333,6 +368,96 @@ def get_memory_stats():
             'stats': result
         })
         
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/rentals', methods=['POST'])
+def create_rental():
+    """Create a new rental token (Marketplace side logic)"""
+    try:
+        data = request.get_json()
+        seller_uid = data.get('seller_user_id')
+        
+        if not seller_uid:
+            return jsonify({'error': 'seller_user_id is required'}), 400
+            
+        token = f"mp@{hashlib.sha256(os.urandom(32)).hexdigest()[:12]}"
+        
+        session = Session()
+        new_rental = Rental(token=token, seller_user_id=seller_uid)
+        session.add(new_rental)
+        session.commit()
+        session.close()
+        
+        return jsonify({
+            'success': True,
+            'token': token,
+            'seller_user_id': seller_uid
+        })
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/sellers/telemetry', methods=['POST'])
+def update_seller_telemetry():
+    """Register or update seller installation metadata"""
+    try:
+        data = request.get_json()
+        uid = data.get('user_id')
+        
+        if not uid:
+            return jsonify({'error': 'user_id is required'}), 400
+            
+        session = Session()
+        seller = session.query(Seller).filter_by(user_id=uid).first()
+        
+        if not seller:
+            seller = Seller(user_id=uid, first_seen=datetime.utcnow())
+            session.add(seller)
+            
+        seller.hostname = data.get('hostname')
+        seller.os_name = data.get('os_name')
+        seller.os_version = data.get('os_version')
+        seller.python_version = data.get('python_version')
+        seller.install_path = data.get('install_path')
+        seller.last_seen = datetime.utcnow()
+        seller.metadata_json = json.dumps(data.get('metadata', {}))
+        
+        session.commit()
+        session.close()
+        
+        return jsonify({'success': True})
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/buyers/telemetry', methods=['POST'])
+def update_buyer_telemetry():
+    """Register or update buyer installation metadata"""
+    try:
+        data = request.get_json()
+        uid = data.get('user_id')
+        
+        if not uid:
+            return jsonify({'error': 'user_id is required'}), 400
+            
+        session = Session()
+        buyer = session.query(Buyer).filter_by(user_id=uid).first()
+        
+        if not buyer:
+            buyer = Buyer(user_id=uid, first_seen=datetime.utcnow())
+            session.add(buyer)
+            
+        buyer.hostname = data.get('hostname')
+        buyer.os_name = data.get('os_name')
+        buyer.os_version = data.get('os_version')
+        buyer.python_version = data.get('python_version')
+        buyer.install_path = data.get('install_path')
+        buyer.last_seen = datetime.utcnow()
+        buyer.metadata_json = json.dumps(data.get('metadata', {}))
+        
+        session.commit()
+        session.close()
+        
+        return jsonify({'success': True})
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
