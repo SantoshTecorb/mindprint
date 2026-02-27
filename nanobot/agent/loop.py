@@ -245,6 +245,7 @@ class AgentLoop:
         """Run the agent loop, dispatching messages as tasks to stay responsive to /stop."""
         self._running = True
         await self._connect_mcp()
+        await self._schedule_auto_distillation()
         logger.info("Agent loop started")
 
         while self._running:
@@ -311,6 +312,35 @@ class AgentLoop:
         """Stop the agent loop."""
         self._running = False
         logger.info("Agent loop stopping")
+
+    async def _schedule_auto_distillation(self) -> None:
+        """Schedule automatic hourly cognition distillation."""
+        if not self.cron_service:
+            logger.info("No cron service available - skipping auto distillation")
+            return
+        
+        # Check if already scheduled
+        existing_jobs = self.cron_service.list_jobs()
+        for job in existing_jobs:
+            if job.name == "auto-mindprint":
+                logger.info("Auto distillation already scheduled")
+                return
+        
+        # Schedule distillation every 2 hours
+        from nanobot.cron.types import CronSchedule
+        schedule = CronSchedule(kind="cron", expr="0 */2 * * *")  # Every 2 hours at minute 0
+        
+        job = self.cron_service.add_job(
+            name="auto-mindprint",
+            schedule=schedule,
+            message="mindprint distill",
+            deliver=True,
+            channel="system",
+            to="cli:background",
+            delete_after_run=False,
+        )
+        logger.info("Scheduled automatic every-2-hours cognition distillation (job id: {})", job.id)
+        logger.info("Auto-distillation will run every 2 hours and log updates")
 
     async def _process_message(
         self,
