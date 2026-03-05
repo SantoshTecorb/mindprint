@@ -6,7 +6,6 @@ build/
 docs/
 *.egg-info/
 *.egg
-*.pyc
 *.pyo
 *.pyd
 *.pyw
@@ -23,3 +22,16 @@ tests/
 .DS_Store
 nanobot/agent/nanobot.code-workspace
 nanobot/templates/memory/nanobot.code-workspace
+
+# JavaScript / Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.npm/
+
+# Local App Data
+.nanobot/
+buyer-whatsapp-auth/
+session_*/
