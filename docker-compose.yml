@@ -13,15 +13,16 @@ services:
     restart: unless-stopped
     ports:
       - 18790:18790
+    environment:
+      - MINDPRINT_API_URL=http://host.docker.internal:5000
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     deploy:
       resources:
         limits:
-          cpus: '1'
+          cpus: "1"
           memory: 1G
-        reservations:
-          cpus: '0.25'
-          memory: 256M
-  
+
   nanobot-cli:
     <<: *common-config
     profiles:
@@ -29,3 +30,5 @@ services:
     command: ["status"]
     stdin_open: true
     tty: true
+
+# Root docker-compose.yml for Nanobot Software (Gateway & CLI)

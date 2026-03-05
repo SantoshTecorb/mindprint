@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: mindprint-db
+    environment:
+      POSTGRES_USER: nanobot
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: memorydb
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  api:
+    build: .
+    container_name: mindprint-api
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgresql://nanobot:password@db/memorydb
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+    ports:
+      - "5000:5000"
+
+volumes:
+  postgres_data:

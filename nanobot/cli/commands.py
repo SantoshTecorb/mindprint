@@ -3,6 +3,7 @@
 import asyncio
 import os
 import signal
+import subprocess
 from pathlib import Path
 import select
 import sys
@@ -380,6 +381,16 @@ def gateway(
         try:
             await cron.start()
             await heartbeat.start()
+            
+            # Note: MindPrint backend should be managed separately
+            # This is just a helpful message for local development
+            if config.tools.mindprint.enabled:
+                from nanobot.utils.db_client import CognitionDBClient
+                db_client = CognitionDBClient()
+                if not db_client.test_connection():
+                    console.print("[yellow]ℹ️  MindPrint backend not reachable. Set MINDPRINT_API_URL environment variable.[/yellow]")
+                    console.print("[dim]   For local development, start backend separately: python mindprint-backend/api.py[/dim]")
+
             await asyncio.gather(
                 agent.run(),
                 channels.start_all(),
@@ -1090,6 +1101,49 @@ def _login_github_copilot() -> None:
     except Exception as e:
         console.print(f"[red]Authentication error: {e}[/red]")
         raise typer.Exit(1)
+
+
+# ============================================================================
+# MindPrint Commands
+# ============================================================================
+
+mindprint_app = typer.Typer(help="Manage MindPrint cognition distillation and sync")
+app.add_typer(mindprint_app, name="mindprint")
+
+
+@mindprint_app.command("status")
+def mindprint_status():
+    """Check MindPrint backend connection status."""
+    from nanobot.utils.db_client import CognitionDBClient
+    db_client = CognitionDBClient()
+    
+    if db_client.test_connection():
+        console.print("[green]✓ MindPrint backend is reachable and healthy.[/green]")
+        status = db_client.get_sync_status()
+        if status.get("connected"):
+            console.print(f"[dim]   Total memories: {status.get('total_memories', 0)}[/dim]")
+            console.print(f"[dim]   Unique files: {status.get('unique_files', 0)}[/dim]")
+    else:
+        console.print("[red]✗ MindPrint backend is not reachable.[/red]")
+        console.print("[yellow]💡 Set MINDPRINT_API_URL environment variable to your backend endpoint.[/yellow]")
+
+
+@mindprint_app.command("sync")
+def mindprint_sync(
+    path: str = typer.Option(None, "--path", "-p", help="Workspace path to distill"),
+    output_dir: str = typer.Option(None, "--output", "-o", help="Output directory"),
+):
+    """Manually trigger cognition distillation and sync."""
+    from nanobot.agent.tools.mindprint import MindPrintTool
+    import asyncio
+    
+    tool = MindPrintTool()
+    
+    async def run_sync():
+        result = await tool.execute(action="distill", path=path, output_dir=output_dir)
+        console.print(result)
+        
+    asyncio.run(run_sync())
 
 
 if __name__ == "__main__":

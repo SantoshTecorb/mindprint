@@ -1,5 +1,5 @@
 # Nanobot Makefile
-.PHONY: help install run agent gateway cron-list cron-clean test clean lint format db-setup db-start db-stop db-status db-api db-reset
+.PHONY: help install run agent gateway cron-list cron-clean cron-status test clean lint format onboard cognition cognition-log mindprint quickstart dev status
 
 # Default target
 help:
@@ -8,19 +8,11 @@ help:
 	@echo "Setup & Install:"
 	@echo "  install     - Install dependencies and setup"
 	@echo "  onboard     - Initialize configuration"
-	@echo "  db-setup    - Setup PostgreSQL database"
 	@echo ""
 	@echo "Running:"
 	@echo "  run         - Start interactive agent (CLI)"
 	@echo "  agent       - Start interactive agent (alias for run)"
 	@echo "  gateway     - Start gateway server (includes cron)"
-	@echo "  db-api      - Start database API server"
-	@echo ""
-	@echo "Database Management:"
-	@echo "  db-start    - Start PostgreSQL service"
-	@echo "  db-stop     - Stop PostgreSQL service"
-	@echo "  db-status   - Check PostgreSQL status"
-	@echo "  db-reset    - Reset database (WARNING: deletes all data)"
 	@echo ""
 	@echo "Cron Management:"
 	@echo "  cron-list   - List scheduled jobs"
@@ -36,6 +28,7 @@ help:
 	@echo "MindPrint:"
 	@echo "  mindprint   - Manual cognition distillation"
 	@echo "  cognition   - View latest cognition profile"
+	@echo "  cognition-log - View distillation log"
 
 # Setup & Install
 install:
@@ -122,55 +115,13 @@ clean:
 	rm -rf build/ dist/ 2>/dev/null || true
 	@echo "✅ Clean complete!"
 
-# Database Management
-db-setup:
-	@echo "🗄️  Setting up PostgreSQL database..."
-	@echo "⚠️  This requires PostgreSQL to be installed and running"
-	@echo "📋 Running setup script..."
-	@echo "CREATE DATABASE memorydb;" | psql -U postgres || true
-	@echo "CREATE USER nanobot WITH PASSWORD 'nanobot123';" | psql -U postgres || true
-	@echo "GRANT ALL PRIVILEGES ON DATABASE memorydb TO nanobot;" | psql -U postgres || true
-	@echo "\c memorydb" | psql -U postgres -f mindprint-backend/setup_postgres.sql || true
-	@echo "✅ Database setup complete!"
-
-db-start:
-	@echo "🚀 Starting PostgreSQL service..."
-	brew services start postgresql || sudo systemctl start postgresql || echo "Please start PostgreSQL manually"
-	@echo "✅ PostgreSQL started"
-
-db-stop:
-	@echo "🛑 Stopping PostgreSQL service..."
-	brew services stop postgresql || sudo systemctl stop postgresql || echo "Please stop PostgreSQL manually"
-	@echo "✅ PostgreSQL stopped"
-
-db-status:
-	@echo "📊 PostgreSQL status:"
-	brew services list | grep postgresql || sudo systemctl status postgresql || echo "PostgreSQL status unknown"
-
-db-reset:
-	@echo "⚠️  WARNING: This will delete all data in memorydb!"
-	@read -p "Continue? (y/N) " confirm && [ "$$confirm" = "y" ] || exit 1
-	@echo "🗑️  Dropping and recreating database..."
-	@echo "DROP DATABASE IF EXISTS memorydb;" | psql -U postgres
-	@echo "CREATE DATABASE memorydb;" | psql -U postgres
-	@echo "\c memorydb" | psql -U postgres -f mindprint-backend/setup_postgres.sql
-	@echo "✅ Database reset complete!"
-
-db-api:
-	@echo "🌐 Starting database API server..."
-	@echo "📦 Installing database dependencies..."
-	source venv/bin/activate && pip install -r mindprint-backend/requirements_postgres.txt
-	@echo "🚀 Starting Flask API on port 5000..."
-	cd mindprint-backend && source ../venv/bin/activate && python api.py
-
 # Quick start
-quickstart: install onboard db-setup
+quickstart: install onboard
 	@echo "🚀 Quick start complete!"
 	@echo "Next steps:"
 	@echo "  1. Add your API key to ~/.nanobot/config.json"
 	@echo "  2. Run: make run"
 	@echo "  3. Or run: make gateway (for background services)"
-	@echo "  4. Or run: make db-api (for database server)"
 
 # Development workflow
 dev: format lint test
