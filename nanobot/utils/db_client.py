@@ -1,6 +1,7 @@
 """Database client for syncing cognition data to remote database."""
 
 import json
+import os
 import requests
 import hashlib
 from datetime import datetime
