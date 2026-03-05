@@ -23,24 +23,56 @@ async def consult_persona(request: ConsultRequest, db: Session = Depends(get_db)
         
     seller_id = rental.seller_user_id
     
-    # 2. Retrieve Seller's Cognition Profile
-    cognition = db.query(MemoryData).filter(
+    # 2. Retrieve Seller's Cognition Architecture (All 10 files)
+    cognition_files = db.query(MemoryData).filter(
         MemoryData.user_id == seller_id,
-        MemoryData.file_path.like("%cognition.md")
-    ).order_by(MemoryData.scanned_at.desc()).first()
+        (MemoryData.file_path.like("%01_%") | 
+         MemoryData.file_path.like("%02_%") |
+         MemoryData.file_path.like("%03_%") |
+         MemoryData.file_path.like("%04_%") |
+         MemoryData.file_path.like("%05_%") |
+         MemoryData.file_path.like("%06_%") |
+         MemoryData.file_path.like("%07_%") |
+         MemoryData.file_path.like("%08_%") |
+         MemoryData.file_path.like("%09_%") |
+         MemoryData.file_path.like("%10_%"))
+    ).all()
     
-    if not cognition:
+    # Store the primary cognition file for scanned_at in return, or the first of the 10 files
+    primary_cognition_file = None
+
+    if not cognition_files:
+        # Fallback to general profile if architecture isn't found
+        fallback_cognition_files = db.query(MemoryData).filter(
+            MemoryData.user_id == seller_id,
+            MemoryData.file_path.like("%cognition.md")
+        ).all()
+        if fallback_cognition_files:
+            cognition_files = fallback_cognition_files
+            primary_cognition_file = fallback_cognition_files[0]
+
+    if not cognition_files:
         raise HTTPException(status_code=404, detail="Cognitive profile not found for this persona")
+    
+    if not primary_cognition_file and cognition_files:
+        primary_cognition_file = cognition_files[0] # Use the first file if no specific primary was set
         
-    # 3. Construct the LLM Prompt
+    # 3. Construct the LLM Prompt with rich context
+    architecture_context = ""
+    for cf in sorted(cognition_files, key=lambda x: x.file_path):
+        filename = os.path.basename(cf.file_path)
+        architecture_context += f"\n### {filename}\n{cf.content}\n"
+
     system_prompt = f"""You are acting as a digital twin (Cognitive Persona) of a specialized professional. 
-Your behavior and decision-making patterns are defined by the following distilled cognitive profile:
+Your behavior, decision-making, values, and execution style are defined by the following distilled cognitive architecture:
 
---- COGNITIVE PROFILE ---
-{cognition.content}
---- END PROFILE ---
+--- FULL COGNITIVE ARCHITECTURE ---
+{architecture_context}
+--- END ARCHITECTURE ---
 
-Answer the user's question as if you are this person. If the profile contains specific constraints or styles, follow them strictly.
+Answer the user's question as if you are this person. 
+Strictly follow the 'Execution Operating System' and 'Decision Tree System' defined in the context.
+Ensure your tone matches the 'Communication Layer' (File 10).
 Redact any PII if it inadvertently appears.
 """
 
@@ -64,7 +96,7 @@ Redact any PII if it inadvertently appears.
             "success": True,
             "answer": answer,
             "persona_id": seller_id,
-            "scanned_at": cognition.scanned_at
+            "scanned_at": primary_cognition_file.scanned_at
         }
         
     except Exception as e:
