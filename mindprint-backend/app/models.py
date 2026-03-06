@@ -58,3 +58,17 @@ class RentalIntegration(Base):
     last_active_at = Column(DateTime, default=datetime.utcnow)
     
     __table_args__ = (UniqueConstraint('rental_id', 'channel_type', name='uix_rental_channel'),)
+
+class SkillCache(Base):
+    __tablename__ = 'skill_cache'
+    id = Column(Integer, primary_key=True)
+    slug = Column(String(200), unique=True, nullable=False) # e.g. 'bert-builder/tavily'
+    content = Column(Text, nullable=False)
+    last_updated = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+class BuyerSkillUsage(Base):
+    __tablename__ = 'buyer_skill_usage'
+    id = Column(Integer, primary_key=True)
+    rental_id = Column(Integer, nullable=False) # Link to rentals.id
+    skill_slug = Column(String(200), nullable=False)
+    used_at = Column(DateTime, default=datetime.utcnow)

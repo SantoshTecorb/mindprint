@@ -6,8 +6,9 @@ class Settings(BaseSettings):
     VERSION: str = "2.0.0"
     API_V1_STR: str = "/api"
     
-    DATABASE_URL: str = "postgresql://nanobot:password@localhost/memorydb"
-    CONSULT_MODEL: str = "gpt-3.5-turbo"
+    DATABASE_URL: str
+    CONSULT_MODEL: str
+    GROQ_API_KEY: Optional[str] = None
     
     class Config:
         env_file = ".env"
