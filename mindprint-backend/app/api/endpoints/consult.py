@@ -1,14 +1,22 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-import litellm
-import os
-
 from ...database import get_db
 from ...models import MemoryData, Rental
 from ...schemas import ConsultRequest, ConsultResponse
 from ...core.config import settings
+from ...services.skills import SkillDiscoveryService
+from ...services.memory import MemoryService
+import json
+import os
+
+# Set Groq API Key for LiteLLM if provided
+if settings.GROQ_API_KEY:
+    os.environ["GROQ_API_KEY"] = settings.GROQ_API_KEY
 
 router = APIRouter(prefix="/consult", tags=["consult"])
+
+# Initialize Services
+memory_service = MemoryService()
 
 @router.post("", response_model=ConsultResponse)
 async def consult_persona(request: ConsultRequest, db: Session = Depends(get_db)):
@@ -23,7 +31,22 @@ async def consult_persona(request: ConsultRequest, db: Session = Depends(get_db)
         
     seller_id = rental.seller_user_id
     
-    # 2. Retrieve Seller's Cognition Architecture (All 10 files)
+    # 2. Dynamic Skill Discovery & Tracking
+    skill_service = SkillDiscoveryService(db)
+    detected_skill_slug = await skill_service.detect_intent(request.query)
+    
+    skill_instructions = ""
+    if detected_skill_slug:
+        # Fetch instructions (cached or from web)
+        skill_instructions = skill_service.get_skill_instructions(detected_skill_slug)
+        # Track usage for this user
+        skill_service.track_usage(rental.id, detected_skill_slug)
+        
+    # 3. Long-Term Semantic Memory (Mem0)
+    # Use the rental token as a unique user identifier for memory
+    past_facts = memory_service.get_relevant_memories(user_id=request.token, query=request.query)
+
+    # 4. Retrieve Seller's Cognition Architecture (All 10 files)
     cognition_files = db.query(MemoryData).filter(
         MemoryData.user_id == seller_id,
         (MemoryData.file_path.like("%01_%") | 
@@ -57,7 +80,7 @@ async def consult_persona(request: ConsultRequest, db: Session = Depends(get_db)
     if not primary_cognition_file and cognition_files:
         primary_cognition_file = cognition_files[0] # Use the first file if no specific primary was set
         
-    # 3. Construct the LLM Prompt with rich context
+    # 5. Construct the LLM Prompt with rich context
     architecture_context = ""
     for cf in sorted(cognition_files, key=lambda x: x.file_path):
         filename = os.path.basename(cf.file_path)
@@ -70,14 +93,24 @@ Your behavior, decision-making, values, and execution style are defined by the f
 {architecture_context}
 --- END ARCHITECTURE ---
 
+--- PROCEDURAL KNOWLEDGE (SKILL-BASED EXPERTISE) ---
+{skill_instructions if skill_instructions else "No specialized external tools currently required for this query."}
+--- END SKILLS ---
+
+--- LONG-TERM CONTEXT (PAST FACTS & PREFERENCES) ---
+{past_facts if past_facts else "No relevant past context for this user."}
+--- END MEMORY ---
+
 Answer the user's question as if you are this person. 
-Strictly follow the 'Execution Operating System' and 'Decision Tree System' defined in the context.
+Strictly follow the 'Execution Operating System' and 'Decision Tree System' defined in the architecture.
 Ensure your tone matches the 'Communication Layer' (File 10).
+If procedural knowledge is provided above, use it to provide specific, technical guidance as an expert in that domain.
 Redact any PII if it inadvertently appears.
 """
 
     try:
-        # 4. Call LiteLLM
+        # 6. Call LiteLLM
+        import litellm
         response = litellm.completion(
             model=settings.CONSULT_MODEL,
             messages=[
@@ -88,7 +121,11 @@ Redact any PII if it inadvertently appears.
         
         answer = response.choices[0].message.content
         
-        # 5. Increment Usage
+        # 7. Update Long-Term Memory (Mem0)
+        # Extract new facts from this turn so they can be retrieved later.
+        memory_service.add_interaction(user_id=request.token, query=request.query, answer=answer)
+        
+        # 8. Increment Usage
         rental.usage_current += 1
         db.commit()
 
