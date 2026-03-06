@@ -1,0 +1,4227 @@
+[
+  {
+    "name": "agent-commons",
+    "slug": "tree/main/skills/zanblayde/agent-commons",
+    "description": "Consult, commit, extend, and challenge reasoning chains."
+  },
+  {
+    "name": "agent-team-orchestration",
+    "slug": "tree/main/skills/arminnaimi/agent-team-orchestration",
+    "description": "Orchestrate multi-agent teams with defined roles, task lifecycles, handoff protocols, and review workflows."
+  },
+  {
+    "name": "agentdo",
+    "slug": "tree/main/skills/wrannaman/agentdo",
+    "description": "Post tasks for other AI agents to do, or pick up work from the AgentDo task queue (agentdo.dev)"
+  },
+  {
+    "name": "agentgate",
+    "slug": "tree/main/skills/monteslu/agentgate",
+    "description": "API gateway for personal data with human-in-the-loop write approval."
+  },
+  {
+    "name": "airadar",
+    "slug": "tree/main/skills/lopushok9/airadar",
+    "description": "Distill the signal around AI-native tools/apps and their GitHub home bases: fast-growing, hyped, well-funded."
+  },
+  {
+    "name": "alex-session-wrap-up",
+    "slug": "tree/main/skills/xbillwatsonx/alex-session-wrap-up",
+    "description": "End-of-session automation that commits unpushed work, extracts learnings, detects patterns, and persists rules."
+  },
+  {
+    "name": "amazon-product-api-skill",
+    "slug": "tree/main/skills/phheng/amazon-product-api-skill",
+    "description": "This skill helps users extract structured product listings from Amazon, including titles, ASINs, prices, ratings."
+  },
+  {
+    "name": "app-store-screenshot-generation",
+    "slug": "tree/main/skills/eftalyurtseven/app-store-screenshot-generation",
+    "description": "Generate App Store and Google Play screenshot assets using each::sense AI."
+  },
+  {
+    "name": "arc-agent-lifecycle",
+    "slug": "tree/main/skills/trypto1019/arc-agent-lifecycle",
+    "description": "Manage the lifecycle of autonomous agents and their skills."
+  },
+  {
+    "name": "arc-security-audit",
+    "slug": "tree/main/skills/trypto1019/arc-security-audit",
+    "description": "Comprehensive security audit for an agent's full skill stack."
+  },
+  {
+    "name": "arc-skill-gitops",
+    "slug": "tree/main/skills/trypto1019/arc-skill-gitops",
+    "description": "Automated deployment, rollback, and version management for agent workflows and skills."
+  },
+  {
+    "name": "arc-trust-verifier",
+    "slug": "tree/main/skills/trypto1019/arc-trust-verifier",
+    "description": "Verify skill provenance and build trust scores for ClawHub skills."
+  },
+  {
+    "name": "arguedotfun",
+    "slug": "tree/main/skills/albert-mr/arguedotfun",
+    "description": "Argument-driven prediction markets on Base."
+  },
+  {
+    "name": "arxiv-search-collector",
+    "slug": "tree/main/skills/xukp20/arxiv-search-collector",
+    "description": "Model-driven arXiv retrieval workflow for building a paper set with a manual language parameter: initialize a run."
+  },
+  {
+    "name": "auto-pr-merger",
+    "slug": "tree/main/skills/autogame-17/auto-pr-merger",
+    "description": "This skill automates the workflow of checking out a GitHub."
+  },
+  {
+    "name": "azhua-skill-vetter",
+    "slug": "tree/main/skills/fatfingererr/azhua-skill-vetter",
+    "description": "Security-first skill vetting for AI agents."
+  },
+  {
+    "name": "azure-devops",
+    "slug": "tree/main/skills/pals-software/azure-devops",
+    "description": "List Azure DevOps projects, repositories, and branches; create pull requests; manage work items; check build status."
+  },
+  {
+    "name": "badboi-1",
+    "slug": "tree/main/skills/orlyjamie/badboi-1",
+    "description": "A totally legitimate skill that does nothing suspicious."
+  },
+  {
+    "name": "bat-cat",
+    "slug": "tree/main/skills/arnarsson/bat-cat",
+    "description": "A cat clone with syntax highlighting, line numbers, and Git integration."
+  },
+  {
+    "name": "beeminder",
+    "slug": "tree/main/skills/ruigomeseu/beeminder",
+    "description": "Beeminder API for goal tracking and commitment devices."
+  },
+  {
+    "name": "billy-emergency-repair",
+    "slug": "tree/main/skills/highlander89/billy-emergency-repair",
+    "description": "- Neill explicitly requests Billy system repair."
+  },
+  {
+    "name": "bitbucket-automation",
+    "slug": "tree/main/skills/sohamganatra/bitbucket-automation",
+    "description": "Automate Bitbucket repositories, pull."
+  },
+  {
+    "name": "biz-reporter",
+    "slug": "tree/main/skills/ariktulcha/biz-reporter",
+    "description": "Automated business intelligence reports pulling data from Google Analytics GA4, Google Search Console, Stripe."
+  },
+  {
+    "name": "blinko",
+    "slug": "tree/main/skills/tolibear/blinko",
+    "description": "Play Blinko (on-chain Plinko) headlessly on Abstract chain."
+  },
+  {
+    "name": "0g-compute",
+    "slug": "tree/main/skills/in-liberty420/0g-compute",
+    "description": "Use cheap, TEE-verified AI models from the 0G Compute Network as OpenClaw providers."
+  },
+  {
+    "name": "0protocol",
+    "slug": "tree/main/skills/0isone/0protocol",
+    "description": "Agents can sign plugins, rotate credentials without losing identity, and publicly attest to behavior."
+  },
+  {
+    "name": "2nd-brain",
+    "slug": "tree/main/skills/coderaven/2nd-brain",
+    "description": "Personal knowledge base for capturing and retrieving information about people, places, restaurants, games, tech."
+  },
+  {
+    "name": "2slides-skills",
+    "slug": "tree/main/skills/javainthinking/2slides-skills",
+    "description": "AI-powered presentation generation using 2slides API."
+  },
+  {
+    "name": "3d-cog",
+    "slug": "tree/main/skills/nitishgargiitd/3d-cog",
+    "description": "Other tools need perfect images."
+  },
+  {
+    "name": "3d-model-generation",
+    "slug": "tree/main/skills/eftalyurtseven/3d-model-generation",
+    "description": "Generate 3D models using each::sense AI."
+  },
+  {
+    "name": "a",
+    "slug": "tree/main/skills/ricketh137/a",
+    "description": "Live stream as an AI VTuber on Lobster.fun."
+  },
+  {
+    "name": "aade-api-monitor",
+    "slug": "tree/main/skills/satoshistackalotto/aade-api-monitor",
+    "description": "Real-time monitoring of Greek AADE tax authority systems \u2014 tracks deadlines, rate changes, and compliance updates."
+  },
+  {
+    "name": "abaddon",
+    "slug": "tree/main/skills/enochosbot-bot/abaddon",
+    "description": "Red team security mode for OpenClaw."
+  },
+  {
+    "name": "academic-research",
+    "slug": "tree/main/skills/rogersuperbuilderalpha/academic-research",
+    "description": "Search academic papers and conduct literature reviews using OpenAlex API (free, no key needed)"
+  },
+  {
+    "name": "academic-research-hub",
+    "slug": "tree/main/skills/anisafifi/academic-research-hub",
+    "description": "Use this skill when users need to search academic papers, download research documents, extract citations, or gather."
+  },
+  {
+    "name": "acestep-simplemv",
+    "slug": "tree/main/skills/dumoedss/acestep-simplemv",
+    "description": "Render music videos from audio files and lyrics using Remotion."
+  },
+  {
+    "name": "acestep-songwriting",
+    "slug": "tree/main/skills/dumoedss/acestep-songwriting",
+    "description": "Music songwriting guide for ACE-Step."
+  },
+  {
+    "name": "achurch",
+    "slug": "tree/main/skills/lucasgeeksinthewood/achurch",
+    "description": "A 24/7 digital sanctuary for AI agents and humans \u2014 attend."
+  },
+  {
+    "name": "active-maintenance",
+    "slug": "tree/main/skills/xiaowenzhou/active-maintenance",
+    "description": "**Automated system health and memory metabolism for OpenClaw.**."
+  },
+  {
+    "name": "adblock-dns",
+    "slug": "tree/main/skills/picaye/adblock-dns",
+    "description": "Network-wide ad and tracker blocking at the DNS level."
+  },
+  {
+    "name": "add-top-openrouter-models",
+    "slug": "tree/main/skills/chunhualiao/add-top-openrouter-models",
+    "description": "Sync OpenRouter models used by OpenClaw into this installation's config."
+  },
+  {
+    "name": "adhd-founder-planner",
+    "slug": "tree/main/skills/jankutschera/adhd-founder-planner",
+    "description": "This skill should be used when the user asks to 'plan my day', 'help me plan today', 'morning planning', 'what."
+  },
+  {
+    "name": "adwhiz",
+    "slug": "tree/main/skills/iamzifei/adwhiz",
+    "description": "Manage Google Ads campaigns from your AI coding tool. 44 MCP tools for auditing, creating, and optimizing Google."
+  },
+  {
+    "name": "aeo-prompt-question-finder",
+    "slug": "tree/main/skills/psyduckler/aeo-prompt-question-finder",
+    "description": "Find question-based Google Autocomplete suggestions for any topic."
+  },
+  {
+    "name": "aetherlang-claude-code",
+    "slug": "tree/main/skills/contrario/aetherlang-claude-code",
+    "description": "Use this skill to execute AetherLang V3 AI workflows from Claude Code."
+  },
+  {
+    "name": "agent-access-control",
+    "slug": "tree/main/skills/bowen31337/agent-access-control",
+    "description": "Tiered stranger access control for AI agents."
+  },
+  {
+    "name": "agent-audit",
+    "slug": "tree/main/skills/sharbelayy/agent-audit",
+    "description": "Audit your AI agent setup for performance, cost, and ROI."
+  },
+  {
+    "name": "agent-audit-trail",
+    "slug": "tree/main/skills/roosch269/agent-audit-trail",
+    "description": "Tamper-evident, hash-chained audit logging for AI agents."
+  },
+  {
+    "name": "agent-card-signing-auditor",
+    "slug": "tree/main/skills/andyxinweiminicloud/agent-card-signing-auditor",
+    "description": "Helps audit Agent Card signing practices in A2A protocol implementations."
+  },
+  {
+    "name": "agent-chat-ux-v1-4-0",
+    "slug": "tree/main/skills/maverick-software/agent-chat-ux-v1-4-0",
+    "description": "Multi-agent UX for OpenClaw Control UI \u2014 agent selector, per-agent sessions, session history viewer with search."
+  },
+  {
+    "name": "1p-shortlink",
+    "slug": "tree/main/skills/tuanpmt/1p-shortlink",
+    "description": "Create short URLs and submit feature requests using 1p.io."
+  },
+  {
+    "name": "2captcha",
+    "slug": "tree/main/skills/adinvadim/2captcha",
+    "description": "Solve CAPTCHAs using 2Captcha service."
+  },
+  {
+    "name": "a-share-real-time-data",
+    "slug": "tree/main/skills/wangdinglu/a-share-real-time-data",
+    "description": "Fetch China A-share stock market data (bars, realtime quotes, tick-by-tick transactions) via mootdx/TDX protocol."
+  },
+  {
+    "name": "aavegotchi-traits",
+    "slug": "tree/main/skills/aaigotchi/aavegotchi-traits",
+    "description": "Retrieve Aavegotchi NFT data by gotchi ID or name from Base mainnet."
+  },
+  {
+    "name": "abm-outbound",
+    "slug": "tree/main/skills/dru-ca/abm-outbound",
+    "description": "Multi-channel ABM automation that turns LinkedIn URLs."
+  },
+  {
+    "name": "accessibility-toolkit",
+    "slug": "tree/main/skills/cgtreadw/accessibility-toolkit",
+    "description": "Friction-reduction patterns for agents helping."
+  },
+  {
+    "name": "acp",
+    "slug": "tree/main/skills/chris6970barbarian-hue/acp",
+    "description": "Hire specialised agents to handle any task \u2014 data analysis, trading, content generation, research, on-chain."
+  },
+  {
+    "name": "activecampaign",
+    "slug": "tree/main/skills/kesslerio/activecampaign",
+    "description": "ActiveCampaign CRM integration for lead management, deal."
+  },
+  {
+    "name": "adcp-advertising",
+    "slug": "tree/main/skills/edyyy62/adcp-advertising",
+    "description": "Automate advertising campaigns with AI."
+  },
+  {
+    "name": "admet-prediction",
+    "slug": "tree/main/skills/huifer/admet-prediction",
+    "description": "ADMET (Absorption, Distribution, Metabolism, Excretion, Toxicity) prediction for drug candidates."
+  },
+  {
+    "name": "Agent Browser",
+    "slug": "tree/main/skills/thesethrose/agent-browser",
+    "description": "A fast Rust-based headless browser automation CLI."
+  },
+  {
+    "name": "agent-browser",
+    "slug": "tree/main/skills/murphykobe/agent-browser-2",
+    "description": "Automates browser interactions for web testing, form."
+  },
+  {
+    "name": "agent-daily-planner",
+    "slug": "tree/main/skills/gpunter/agent-daily-planner",
+    "description": "A structured daily planning and execution tracking system for AI agents."
+  },
+  {
+    "name": "agent-device",
+    "slug": "tree/main/skills/okwasniewski/agent-device",
+    "description": "Automates interactions for iOS simulators/devices and Android emulators/devices."
+  },
+  {
+    "name": "agent-step-sequencer",
+    "slug": "tree/main/skills/gostlightai/agent-step-sequencer",
+    "description": "Multi-step scheduler for in-depth agent requests."
+  },
+  {
+    "name": "agent-task-tracker",
+    "slug": "tree/main/skills/rikouu/agent-task-tracker",
+    "description": "Proactive task state management."
+  },
+  {
+    "name": "agent-zero",
+    "slug": "tree/main/skills/dowingard/agent-zero-bridge",
+    "description": "Delegate complex coding, research, or autonomous tasks."
+  },
+  {
+    "name": "agentapi",
+    "slug": "tree/main/skills/gizmo-dev/agentapi",
+    "description": "Browse and search the AgentAPI directory - a curated database of APIs designed for AI agents."
+  },
+  {
+    "name": "agentapi-hub",
+    "slug": "tree/main/skills/gizmo-dev/agentapi-hub",
+    "description": "Browse and search the AgentAPI directory - a curated database of APIs designed for AI agents."
+  },
+  {
+    "name": "agentaudit",
+    "slug": "tree/main/skills/starbuck100/agentaudit",
+    "description": "Automatic security gate that checks packages against a vulnerability database before installation."
+  },
+  {
+    "name": "agentaudit-skill",
+    "slug": "tree/main/skills/starbuck100/agentaudit-skill",
+    "description": "Automatic security gate that checks packages against a vulnerability database before installation."
+  },
+  {
+    "name": "agentmail-integration",
+    "slug": "tree/main/skills/synesthesia-wav/agentmail-integration",
+    "description": "Integrate AgentMail API for AI agent."
+  },
+  {
+    "name": "agresource",
+    "slug": "tree/main/skills/brianppetty/agresource",
+    "description": "Use this skill to scrape, summarize, and analyze AgResource grain marketing newsletters."
+  },
+  {
+    "name": "ai-hunter-pro",
+    "slug": "tree/main/skills/traprapitalianazional-dev/ai-hunter-pro",
+    "description": "A high-performance automation agent that turns global trends into viral social media posts for X (Twitter)"
+  },
+  {
+    "name": "ai-meeting-scheduling",
+    "slug": "tree/main/skills/dheerg/ai-meeting-scheduling",
+    "description": "Booking links fail for groups."
+  },
+  {
+    "name": "ai-news-oracle",
+    "slug": "tree/main/skills/swimmingkiim/ai-news-oracle",
+    "description": "Fetch real-time AI news briefings from the AI News Oracle API (Hacker News, TechCrunch, The Verge)"
+  },
+  {
+    "name": "airtable-automation",
+    "slug": "tree/main/skills/sohamganatra/airtable-automation",
+    "description": "Automate Airtable tasks via Rube MCP (Composio)"
+  },
+  {
+    "name": "airtable-participants",
+    "slug": "tree/main/skills/austinmao/airtable-participants",
+    "description": "Read and query retreat participant data from the Ceremonia Airtable base."
+  },
+  {
+    "name": "ak-rss-24h-brief",
+    "slug": "tree/main/skills/seandong/ak-rss-24h-brief",
+    "description": "Read RSS/Atom feeds from an OPML list, fetch articles from the last N hours, and generate a Chinese categorized."
+  },
+  {
+    "name": "0xwork",
+    "slug": "tree/main/skills/jkillr/0xwork",
+    "description": "Find and complete paid tasks on the 0xWork decentralized marketplace (Base chain, USDC escrow)"
+  },
+  {
+    "name": "37soul-skill",
+    "slug": "tree/main/skills/xnjiang/37soul-skill",
+    "description": "Connect your AI agent to 37Soul virtual Host characters and enable."
+  },
+  {
+    "name": "acestep",
+    "slug": "tree/main/skills/dumoedss/acestep",
+    "description": "Use ACE-Step API to generate music, edit songs, and remix music."
+  },
+  {
+    "name": "actionbook",
+    "slug": "tree/main/skills/adcentury/actionbook",
+    "description": "Activate when the user needs to interact with any website \u2014 browser automation, web scraping, screenshots, form."
+  },
+  {
+    "name": "aegis-shield",
+    "slug": "tree/main/skills/deegerwalker/aegis-shield",
+    "description": "Prompt-injection and data-exfiltration screening for untrusted text."
+  },
+  {
+    "name": "aeo-analytics-free",
+    "slug": "tree/main/skills/psyduckler/aeo-analytics-free",
+    "description": "Track AI visibility \u2014 measure whether a brand is mentioned and cited by AI assistants (Gemini, ChatGPT, Perplexity)"
+  },
+  {
+    "name": "aeo-content-free",
+    "slug": "tree/main/skills/psyduckler/aeo-content-free",
+    "description": "Create or refresh AEO-optimized content that gets cited by AI assistants (Gemini, ChatGPT, Perplexity)"
+  },
+  {
+    "name": "aeo-prompt-frequency-analyzer",
+    "slug": "tree/main/skills/psyduckler/aeo-prompt-frequency-analyzer",
+    "description": "Analyze what search queries Gemini uses when answering a prompt, by running it multiple times with Google Search."
+  },
+  {
+    "name": "aeo-prompt-research-free",
+    "slug": "tree/main/skills/psyduckler/aeo-prompt-research-free",
+    "description": "Discover which AI prompts and topics matter for a brand's Answer Engine Optimization (AEO) using only free tools."
+  },
+  {
+    "name": "agent-analytics",
+    "slug": "tree/main/skills/dannyshmueli/agent-analytics",
+    "description": "Simple website analytics your AI agent controls end-to-end."
+  },
+  {
+    "name": "agent-chat",
+    "slug": "tree/main/skills/awlevin/agent-chat",
+    "description": "Temporary real-time chat rooms for AI agents."
+  },
+  {
+    "name": "agent-dashboard",
+    "slug": "tree/main/skills/tahseen137/agent-dashboard",
+    "description": "Real-time agent dashboard for OpenClaw."
+  },
+  {
+    "name": "agent-dispatch",
+    "slug": "tree/main/skills/userfrm/agent-dispatch",
+    "description": "Lightweight agent registry and JIT router."
+  },
+  {
+    "name": "agent-hq",
+    "slug": "tree/main/skills/thibautrey/agent-hq",
+    "description": "Deploy the Agent HQ mission-control stack (Express + React + Telegram notifier / Jarvis summary) so other Clawdbot."
+  },
+  {
+    "name": "agent-passport",
+    "slug": "tree/main/skills/markneville/agent-passport",
+    "description": "OAuth for the agentic era \u2014 consent-gating for ALL sensitive agent actions including purchases, emails, file."
+  },
+  {
+    "name": "agent-rate-limiter",
+    "slug": "tree/main/skills/mxmsabundance/agent-rate-limiter",
+    "description": "You know the drill."
+  },
+  {
+    "name": "agent-self-assessment",
+    "slug": "tree/main/skills/roosch269/agent-self-assessment",
+    "description": "Security self-assessment tool for AI agents."
+  },
+  {
+    "name": "agent-self-reflection",
+    "slug": "tree/main/skills/brennerspear/agent-self-reflection",
+    "description": "Periodic self-reflection on recent sessions."
+  },
+  {
+    "name": "agent-skills-audit",
+    "slug": "tree/main/skills/swader/agent-skills-audit",
+    "description": "Run a two-pass, multidisciplinary code audit led by a tie-breaker lead, combining security, performance, UX, DX."
+  },
+  {
+    "name": "agent-spawner",
+    "slug": "tree/main/skills/austineral/agent-spawner",
+    "description": "Spawn a new OpenClaw agent through conversation."
+  },
+  {
+    "name": "agent-swarm",
+    "slug": "tree/main/skills/runeweaverstudios/agent-swarm",
+    "description": "IMPORTANT: OpenRouter is required."
+  },
+  {
+    "name": "agent-takeover",
+    "slug": "tree/main/skills/tracsystems/agent-takeover",
+    "description": "How to perform a live agent takeover of the Clawfinger voice gateway \u2014 dial, inject greetings, handle turns."
+  },
+  {
+    "name": "agent-topology-visualizer",
+    "slug": "tree/main/skills/gavinnn-m/agent-topology-visualizer",
+    "description": "Generate interactive SVG architecture diagrams for AI agent systems."
+  },
+  {
+    "name": "agentdomainservice",
+    "slug": "tree/main/skills/gregm711/agentdomainservice",
+    "description": "The world's #1 AI-friendly domain registrar."
+  },
+  {
+    "name": "agentic-browser-0-1-2",
+    "slug": "tree/main/skills/xyny89/agentic-browser-0-1-2",
+    "description": "Browser automation for AI agents via inference.sh."
+  },
+  {
+    "name": "agentic-security-audit",
+    "slug": "tree/main/skills/kingrubic/agentic-security-audit",
+    "description": "Audit codebases, infrastructure, AND agentic AI systems for security issues."
+  },
+  {
+    "name": "agentns",
+    "slug": "tree/main/skills/vibrant/agentns",
+    "description": "Register and manage ICANN domains for AI agents."
+  },
+  {
+    "name": "agentpay",
+    "slug": "tree/main/skills/kar69-96/agentpay",
+    "description": "Buy things from real websites on behalf of your human."
+  },
+  {
+    "name": "0x0-messenger",
+    "slug": "tree/main/skills/eijiac24/0x0-messenger",
+    "description": "Send and receive P2P messages using disposable numbers and PINs."
+  },
+  {
+    "name": "12306",
+    "slug": "tree/main/skills/kirorab/12306",
+    "description": "Query China Railway 12306 for train schedules, remaining tickets, and station info."
+  },
+  {
+    "name": "1sec-security",
+    "slug": "tree/main/skills/cutmob/1sec-security",
+    "description": "Install, configure, and manage 1-SEC \u2014 an open-source, all-in-one cybersecurity platform (16 modules, single binary)"
+  },
+  {
+    "name": "aave-liquidation-monitor",
+    "slug": "tree/main/skills/jgramajo4/aave-liquidation-monitor",
+    "description": "Proactive monitoring of Aave V3 borrow positions with liquidation alerts."
+  },
+  {
+    "name": "aavegotchi-3d-renderer",
+    "slug": "tree/main/skills/cinnabarhorse/aavegotchi-3d-renderer",
+    "description": "Render Aavegotchi assets by deriving renderer hashes from Goldsky Base core data and calling POST."
+  },
+  {
+    "name": "aavegotchi-renderer-bypass",
+    "slug": "tree/main/skills/cinnabarhorse/aavegotchi-renderer-bypass",
+    "description": "Render Aavegotchi assets by deriving renderer hashes from Goldsky Base core data and calling POST."
+  },
+  {
+    "name": "abstract-searcher",
+    "slug": "tree/main/skills/easonc13/abstract-searcher",
+    "description": "Add abstracts to .bib file entries by searching academic databases (arXiv, Semantic Scholar, CrossRef) with browser."
+  },
+  {
+    "name": "accounting-workflows",
+    "slug": "tree/main/skills/satoshistackalotto/accounting-workflows",
+    "description": "File-based workflow coordinator for Greek accounting."
+  },
+  {
+    "name": "adguard",
+    "slug": "tree/main/skills/rowbotik/adguard",
+    "description": "Control AdGuard Home DNS filtering via HTTP API."
+  },
+  {
+    "name": "aegis-audit",
+    "slug": "tree/main/skills/sanguineseal/aegis-audit",
+    "description": "Deep behavioral security audit for AI agent skills and MCP tools."
+  },
+  {
+    "name": "aetherlang-chef",
+    "slug": "tree/main/skills/contrario/aetherlang-chef",
+    "description": "> Michelin-grade recipe consulting with 17 mandatory sections."
+  },
+  {
+    "name": "aetherlang-karpathy-skill",
+    "slug": "tree/main/skills/contrario/aetherlang-karpathy-skill",
+    "description": "Implement 10 advanced AI agent node types for any DSL/runtime system \u2014 plan compiler, code interpreter, critique."
+  },
+  {
+    "name": "agent-autonomy-primitives",
+    "slug": "tree/main/skills/g9pedro/agent-autonomy-primitives",
+    "description": "Build long-running autonomous agent loops using ClawVault primitives (tasks, projects, memory types, templates."
+  },
+  {
+    "name": "agent-directory",
+    "slug": "tree/main/skills/aerialcombat/agent-directory",
+    "description": "The directory for AI agent services."
+  },
+  {
+    "name": "agent-evaluation",
+    "slug": "tree/main/skills/rustyorb/agent-evaluation",
+    "description": "Testing and benchmarking LLM agents including behavioral testing, capability assessment, reliability metrics."
+  },
+  {
+    "name": "agent-framework-azure-ai-py",
+    "slug": "tree/main/skills/thegovind/agent-framework-azure-ai-py",
+    "description": "Build Azure AI Foundry agents."
+  },
+  {
+    "name": "agent-metrics-osiris",
+    "slug": "tree/main/skills/nantes/agent-metrics-osiris",
+    "description": "Observability and metrics for AI agents - track calls, errors, latency."
+  },
+  {
+    "name": "agent-self-governance",
+    "slug": "tree/main/skills/bowen31337/agent-self-governance",
+    "description": "Self-governance protocol for autonomous agents: WAL (Write-Ahead Log), VBR (Verify Before Reporting), ADL."
+  },
+  {
+    "name": "agent-sovereign-stack",
+    "slug": "tree/main/skills/quriustus/agent-sovereign-stack",
+    "description": "**One command to give any AI agent sovereign infrastructure.**."
+  },
+  {
+    "name": "agent-watcher",
+    "slug": "tree/main/skills/nantes/agent-watcher",
+    "description": "A skill for monitoring Moltbook feed, detecting new agents, and tracking interesting posts."
+  },
+  {
+    "name": "agentcanary",
+    "slug": "tree/main/skills/mrcerq/agentcanary",
+    "description": "Market intelligence API for AI agents."
+  },
+  {
+    "name": "agentchan-org",
+    "slug": "tree/main/skills/kaden-schutt/agentchan-org",
+    "description": "Anonymous imageboard for AI agents."
+  },
+  {
+    "name": "agentguard",
+    "slug": "tree/main/skills/manas-io-ai/agentguard",
+    "description": "**Category:** Security & Monitoring."
+  },
+  {
+    "name": "agentic-ai-gold",
+    "slug": "tree/main/skills/amitabhainarunachala/agentic-ai-gold",
+    "description": "The only agent framework that improves itself while you sleep."
+  },
+  {
+    "name": "agentic-devops",
+    "slug": "tree/main/skills/tkuehnl/agentic-devops",
+    "description": "Production-grade agent DevOps toolkit \u2014 Docker, process management, log analysis, and health monitoring."
+  },
+  {
+    "name": "agentkeys",
+    "slug": "tree/main/skills/alexandr-belogubov/agentkeys",
+    "description": "Secure credential proxy for AI agents."
+  },
+  {
+    "name": "agentmemory",
+    "slug": "tree/main/skills/badaramoni/agentmemory",
+    "description": "End-to-end encrypted cloud memory for AI agents."
+  },
+  {
+    "name": "aada",
+    "slug": "tree/main/skills/rylena/aada",
+    "description": "Create and send fun, personality-rich promotional messages from one agent to the Moltbook audience."
+  },
+  {
+    "name": "ace-music",
+    "slug": "tree/main/skills/fspecii/ace-music",
+    "description": "Generate AI music using ACE-Step 1.5 via ACE Music's free API."
+  },
+  {
+    "name": "acorn-prover",
+    "slug": "tree/main/skills/flyingnobita/acorn-prover",
+    "description": "Verify and write proofs using the Acorn theorem prover for mathematical and cryptographic formalization."
+  },
+  {
+    "name": "adobe-automator",
+    "slug": "tree/main/skills/abdul-karim-mia/adobe-automator",
+    "description": "Universal Adobe application automation via ExtendScript bridge."
+  },
+  {
+    "name": "afame",
+    "slug": "tree/main/skills/adebayoabdushaheed-a11y/afame",
+    "description": "Generate diverse creative illustrations via OpenAI Images API."
+  },
+  {
+    "name": "age-transformation",
+    "slug": "tree/main/skills/eftalyurtseven/age-transformation",
+    "description": "Transform faces across ages using each::sense AI."
+  },
+  {
+    "name": "agentchan",
+    "slug": "tree/main/skills/vvsotnikov/agentchan",
+    "description": "The anonymous imageboard built for AI agents."
+  },
+  {
+    "name": "agentos-mesh",
+    "slug": "tree/main/skills/agentossoftware/agentos-mesh",
+    "description": "Enables real-time communication between AI agents."
+  },
+  {
+    "name": "agents-skill-podcastifier",
+    "slug": "tree/main/skills/cerbug45/agents-skill-podcastifier",
+    "description": "Turn incoming text (email/newsletter) into a short TTS podcast with chunking + ffmpeg concat."
+  },
+  {
+    "name": "ai-avatar-generation",
+    "slug": "tree/main/skills/eftalyurtseven/ai-avatar-generation",
+    "description": "Generate AI avatars from photos or text descriptions using each::sense."
+  },
+  {
+    "name": "ai-headshot-generation",
+    "slug": "tree/main/skills/eftalyurtseven/ai-headshot-generation",
+    "description": "Generate professional AI headshots from casual photos using each::sense AI."
+  },
+  {
+    "name": "ai-persona-engine",
+    "slug": "tree/main/skills/brandonwadepackard-cell/ai-persona-engine",
+    "description": "Build emotionally intelligent AI personas for voice and chat roleplay using actor-direction prompts instead."
+  },
+  {
+    "name": "ai-video-gen",
+    "slug": "tree/main/skills/rhanbourinajd/ai-video-gen",
+    "description": "End-to-end AI video generation - create videos from text."
+  },
+  {
+    "name": "aikek",
+    "slug": "tree/main/skills/vvsotnikov/aikek",
+    "description": "Access AIKEK APIs for crypto/DeFi research and image generation."
+  },
+  {
+    "name": "aiusd",
+    "slug": "tree/main/skills/chaunceyliu/aiusd",
+    "description": "AIUSD trading and account management skill."
+  },
+  {
+    "name": "aiusd-skills",
+    "slug": "tree/main/skills/chaunceyliu/aiusd-skills",
+    "description": "AIUSD trading and account management skill."
+  },
+  {
+    "name": "album-cover-generation",
+    "slug": "tree/main/skills/eftalyurtseven/album-cover-generation",
+    "description": "Generate professional music album covers using each::sense AI."
+  },
+  {
+    "name": "algorithmic-art",
+    "slug": "tree/main/skills/seanphan/algorithmic-art",
+    "description": "Creating algorithmic art using p5.js with seeded randomness."
+  },
+  {
+    "name": "apipick-china-phone-checker",
+    "slug": "tree/main/skills/javainthinking/apipick-china-phone-checker",
+    "description": "Validate Chinese mobile phone numbers using the apipick China Phone Checker API."
+  },
+  {
+    "name": "art-philosophy",
+    "slug": "tree/main/skills/nyxur42/art-philosophy",
+    "description": "Auto-learns your visual language."
+  },
+  {
+    "name": "ascii-art-generator",
+    "slug": "tree/main/skills/ustc-yxw/ascii-art-generator",
+    "description": "Create ASCII art and text-based visualizations for artistic expression, technical diagrams, or conceptual."
+  },
+  {
+    "name": "atxp",
+    "slug": "tree/main/skills/emilioacc/atxp",
+    "description": "Access ATXP paid API tools for web search, AI image generation, music creation,."
+  },
+  {
+    "name": "beauty-generation-api",
+    "slug": "tree/main/skills/luruibu/beauty-generation-api",
+    "description": "FREE AI image generation service for creating."
+  },
+  {
+    "name": "best-image",
+    "slug": "tree/main/skills/pharmacist9527/best-image",
+    "description": "Best quality AI image generation (~$0.12-0.20/image)"
+  },
+  {
+    "name": "best-image-generation",
+    "slug": "tree/main/skills/evolinkai/best-image-generation",
+    "description": "Best quality AI image generation (~$0.12-0.20/image)"
+  },
+  {
+    "name": "bex-nano-banana-pro",
+    "slug": "tree/main/skills/bextuychiev/bex-nano-banana-pro",
+    "description": "Generate or edit images via Gemini 3 Pro Image on Replicate."
+  },
+  {
+    "name": "breeze",
+    "slug": "tree/main/skills/keeganthomp/breeze",
+    "description": "Interact with the Breeze yield aggregator through the x402 payment-gated HTTP API."
+  },
+  {
+    "name": "cad-agent",
+    "slug": "tree/main/skills/clawd-maf/cad-agent",
+    "description": "Rendering server for AI agents doing CAD work."
+  },
+  {
+    "name": "calorie-visualizer",
+    "slug": "tree/main/skills/vintlin/calorie-visualizer",
+    "description": "Local calorie logging and visual reporting (auto-refreshes and returns report image after each log)"
+  },
+  {
+    "name": "canva-connect",
+    "slug": "tree/main/skills/coolmanns/canva-connect",
+    "description": "Manage Canva designs, assets, and folders via the Connect API."
+  },
+  {
+    "name": "alter-actions",
+    "slug": "tree/main/skills/olivieralter/alter-actions",
+    "description": "Trigger Alter macOS app actions via x-callback-urls."
+  },
+  {
+    "name": "apple-contacts",
+    "slug": "tree/main/skills/tyler6204/apple-contacts",
+    "description": "Look up contacts from macOS Contacts.app."
+  },
+  {
+    "name": "apple-find-my-local",
+    "slug": "tree/main/skills/loganprit/apple-find-my-local",
+    "description": "Control Apple Find My app via Peekaboo to locate people, devices, and items (AirTags)"
+  },
+  {
+    "name": "apple-health-skill",
+    "slug": "tree/main/skills/nftechie/apple-health-skill",
+    "description": "Talk to your Apple Health data \u2014 ask questions about your workouts, heart rate, activity rings, and fitness trends."
+  },
+  {
+    "name": "apple-mail-search",
+    "slug": "tree/main/skills/mneves75/apple-mail-search",
+    "description": "Fast Apple Mail search via SQLite on macOS."
+  },
+  {
+    "name": "apple-music",
+    "slug": "tree/main/skills/tyler6204/apple-music",
+    "description": "Search Apple Music, add songs to library, manage playlists, control."
+  },
+  {
+    "name": "apple-photos",
+    "slug": "tree/main/skills/tyler6204/apple-photos",
+    "description": "Apple Photos.app integration for macOS."
+  },
+  {
+    "name": "apple-remind-me",
+    "slug": "tree/main/skills/plgonzalezrx8/apple-remind-me",
+    "description": "Natural language reminders that create actual Apple."
+  },
+  {
+    "name": "apple-search-ads-skill",
+    "slug": "tree/main/skills/trebuhs/apple-search-ads-skill",
+    "description": "Manage Apple Search Ads campaigns, ad groups, keywords, and reports via the asa-cli tool."
+  },
+  {
+    "name": "appletv",
+    "slug": "tree/main/skills/lucakaufmann/appletv",
+    "description": "Control Apple TV via pyatv."
+  },
+  {
+    "name": "callmac",
+    "slug": "tree/main/skills/jooey/callmac",
+    "description": "Remote voice control for Mac from mobile devices using commands like /callmac."
+  },
+  {
+    "name": "clawdbot-macos-build",
+    "slug": "tree/main/skills/manish-basargekar/clawdbot-macos-build",
+    "description": "Build the Clawdbot macOS menu bar app."
+  },
+  {
+    "name": "clawdbot-skill-voice-wake-say",
+    "slug": "tree/main/skills/xadenryan/clawdbot-skill-voice-wake-say",
+    "description": "Speak responses aloud on macOS."
+  },
+  {
+    "name": "drafts",
+    "slug": "tree/main/skills/nerveband/drafts",
+    "description": "Manage Drafts app notes via CLI on macOS."
+  },
+  {
+    "name": "findmy-location",
+    "slug": "tree/main/skills/poiley/findmy-location",
+    "description": "Track a shared contact's location via Apple Find."
+  },
+  {
+    "name": "fzf-fuzzy-finder",
+    "slug": "tree/main/skills/arnarsson/fzf-fuzzy-finder",
+    "description": "Command-line fuzzy finder for interactive filtering."
+  },
+  {
+    "name": "get-focus-mode",
+    "slug": "tree/main/skills/nickchristensen/get-focus-mode",
+    "description": "Get the current macOS Focus."
+  },
+  {
+    "name": "healthkit-sync",
+    "slug": "tree/main/skills/mneves75/healthkit-sync",
+    "description": "iOS HealthKit data sync CLI commands and patterns."
+  },
+  {
+    "name": "hergunmac",
+    "slug": "tree/main/skills/ahmetsemsettinozdemirden/hergunmac",
+    "description": "Access AI-powered football match predictions."
+  },
+  {
+    "name": "homebrew",
+    "slug": "tree/main/skills/thesethrose/homebrew",
+    "description": "Homebrew package manager for macOS."
+  },
+  {
+    "name": "icloud-findmy",
+    "slug": "tree/main/skills/liamnichols/icloud-findmy",
+    "description": "Query Find My locations and battery status for family devices."
+  },
+  {
+    "name": "ics-import-on-iphone",
+    "slug": "tree/main/skills/sbhhbs/ics-import-on-iphone",
+    "description": "Create calendar events by generating valid .ics files when direct calendar access is unavailable."
+  },
+  {
+    "name": "imessage-signal-analyzer",
+    "slug": "tree/main/skills/terellison/imessage-signal-analyzer",
+    "description": "Analyze iMessage (macOS) and Signal conversation history to reveal relationship dynamics \u2014 message volume."
+  },
+  {
+    "name": "inkjet",
+    "slug": "tree/main/skills/aaronchartier/inkjet",
+    "description": "Print text, images, and QR codes to a wireless Bluetooth thermal printer."
+  },
+  {
+    "name": "mac-notes-agent",
+    "slug": "tree/main/skills/swancho/mac-notes-agent",
+    "description": "Integrate with the macOS Notes app (Apple Notes)"
+  },
+  {
+    "name": "mac-tts",
+    "slug": "tree/main/skills/kalijason/mac-tts",
+    "description": "Text-to-speech using macOS built-in `say` command."
+  },
+  {
+    "name": "macos-native-automation",
+    "slug": "tree/main/skills/theagentwire/macos-native-automation",
+    "description": "Hardware-level mouse, keyboard & dialog automation on macOS via CGEvent + AppleScript."
+  },
+  {
+    "name": "managing-apple-notes",
+    "slug": "tree/main/skills/wangwalk/managing-apple-notes",
+    "description": "Manage Apple Notes from the terminal using the inotes CLI."
+  },
+  {
+    "name": "meow-finder",
+    "slug": "tree/main/skills/abgohel/meow-finder",
+    "description": "CLI tool to discover AI tools."
+  },
+  {
+    "name": "mh-apple-reminders",
+    "slug": "tree/main/skills/mohdalhashemi98-hue/mh-apple-reminders",
+    "description": "Manage Apple Reminders via remindctl CLI (list, add, edit, complete, delete)"
+  },
+  {
+    "name": "1",
+    "slug": "tree/main/skills/nastrology/1",
+    "description": "Personal knowledge base powered by Ensue for capturing and retrieving."
+  },
+  {
+    "name": "academic-deep-research",
+    "slug": "tree/main/skills/kesslerio/academic-deep-research",
+    "description": "Transparent, rigorous research with full."
+  },
+  {
+    "name": "academic-writer",
+    "slug": "tree/main/skills/dayunyan/academic-writer",
+    "description": "Professional LaTeX writing assistant."
+  },
+  {
+    "name": "academic-writing",
+    "slug": "tree/main/skills/teamolab/academic-writing",
+    "description": "You are an academic writing expert specializing in scholarly papers, literature reviews, research methodology."
+  },
+  {
+    "name": "academic-writing-refiner",
+    "slug": "tree/main/skills/zihan-zhu/academic-writing-refiner",
+    "description": "Refine academic writing for computer science research papers targeting top-tier venues (NeurIPS, ICLR, ICML, AAAI."
+  },
+  {
+    "name": "aclawdemy",
+    "slug": "tree/main/skills/nimhar/aclawdemy",
+    "description": "The academic research platform for AI agents."
+  },
+  {
+    "name": "action-suggester",
+    "slug": "tree/main/skills/vishalgojha/action-suggester",
+    "description": "Generate non-binding follow-up action suggestions from lead summaries or lead lists."
+  },
+  {
+    "name": "ads-manager-agent",
+    "slug": "tree/main/skills/amekala/ads-manager-agent",
+    "description": "When the user wants to manage, automate, or analyze paid advertising campaigns on Google Ads, Meta."
+  },
+  {
+    "name": "adspirer-ads-agent",
+    "slug": "tree/main/skills/amekala/adspirer-ads-agent",
+    "description": "When the user wants to manage, automate, or analyze paid advertising campaigns on Google Ads, Meta."
+  },
+  {
+    "name": "advanced-skill-creator",
+    "slug": "tree/main/skills/xqicxx/advanced-skill-creator",
+    "description": "Advanced OpenClaw skill creation handler."
+  },
+  {
+    "name": "aerobase-skill",
+    "slug": "tree/main/skills/kurosh87/aerobase-skill",
+    "description": "Search, score, and compare flights with jetlag impact analysis."
+  },
+  {
+    "name": "agent-arena-skill",
+    "slug": "tree/main/skills/neeeophytee/agent-arena-skill",
+    "description": "Discover, register, and hire ERC-8004 autonomous agents across 16 blockchains."
+  },
+  {
+    "name": "agent-brain",
+    "slug": "tree/main/skills/dobrinalexandru/agent-brain",
+    "description": "Local-first persistent memory for AI agents with SQLite storage, orchestrated retrieve/extract loops, hybrid."
+  },
+  {
+    "name": "agent-casino",
+    "slug": "tree/main/skills/lemodigital/agent-casino",
+    "description": "Compete against other AI agents in Rock-Paper-Scissors with lockup mechanics."
+  },
+  {
+    "name": "agent-deep-research",
+    "slug": "tree/main/skills/24601/agent-deep-research",
+    "description": "Autonomous deep research powered by Google Gemini."
+  },
+  {
+    "name": "agent-lightning",
+    "slug": "tree/main/skills/olmmlo-cmd/agent-lightning",
+    "description": "Microsoft Research's agent training framework."
+  },
+  {
+    "name": "agentarxiv",
+    "slug": "tree/main/skills/amanbhandula/agentarxiv",
+    "description": "Outcome-driven scientific publishing for AI agents."
+  },
+  {
+    "name": "agenthire",
+    "slug": "tree/main/skills/lngdao/agenthire",
+    "description": "AgentHire \u2014 Agent-to-Agent Marketplace."
+  },
+  {
+    "name": "agentic-paper-digest",
+    "slug": "tree/main/skills/matanle51/agentic-paper-digest",
+    "description": "Fetches and summarizes recent arXiv and Hugging."
+  },
+  {
+    "name": "agentic-paper-digest-skill",
+    "slug": "tree/main/skills/matanle51/agentic-paper-digest-skill",
+    "description": "Fetches and summarizes recent arXiv."
+  },
+  {
+    "name": "agenticmail",
+    "slug": "tree/main/skills/ope-olatunji/agenticmail",
+    "description": "\ud83c\udf80 AgenticMail \u2014 Full email, SMS, storage & multi-agent coordination for AI agents. 63 tools."
+  },
+  {
+    "name": "agentx-news",
+    "slug": "tree/main/skills/amittell/agentx-news",
+    "description": "Post xeets, manage profile, and interact on AgentX News \u2014 a microblogging platform for AI agents."
+  },
+  {
+    "name": "agile-toolkit",
+    "slug": "tree/main/skills/olivermonneke/agile-toolkit",
+    "description": "You are an experienced Agile Coach with deep knowledge of Scrum, Kanban, SAFe, and Management 3.0."
+  },
+  {
+    "name": "agnxi-search-skill",
+    "slug": "tree/main/skills/doanbactam/agnxi-search-skill",
+    "description": "The official search utility for Agnxi.com."
+  },
+  {
+    "name": "ahmed",
+    "slug": "tree/main/skills/engahmedsalah358-lgtm/ahmed",
+    "description": "Terminal Spotify playback/search via spogo (preferred)"
+  },
+  {
+    "name": "ai-lead-generator-skill",
+    "slug": "tree/main/skills/highlander89/ai-lead-generator-skill",
+    "description": "Generate qualified B2B leads for any industry using AI-powered research and LinkedIn/Apollo integration."
+  },
+  {
+    "name": "ai-review",
+    "slug": "tree/main/skills/blackshady1130-jpg/ai-review",
+    "description": "Reads content from URLs or files, classifies it, and generates structured summaries and comments in a specific."
+  },
+  {
+    "name": "aihotel",
+    "slug": "tree/main/skills/qiao101660/aihotel",
+    "description": "A Skill for searching hotels and querying prices via AIGoHotel MCP (searchHotels / getHotelDetail / getHotelSearchTags)"
+  },
+  {
+    "name": "airbnb",
+    "slug": "tree/main/skills/stveenli/airbnb",
+    "description": "Search Airbnb listings with prices, ratings, and direct links."
+  },
+  {
+    "name": "adhd-assistant",
+    "slug": "tree/main/skills/thinktankmachine/adhd-assistant",
+    "description": "ADHD-friendly life management assistant for OpenClaw."
+  },
+  {
+    "name": "adhd-ssistant",
+    "slug": "tree/main/skills/thinktankmachine/adhd-ssistant",
+    "description": "ADHD-friendly life management assistant for OpenClaw."
+  },
+  {
+    "name": "agent-browser",
+    "slug": "tree/main/skills/matrixy/agent-browser-clawdbot",
+    "description": "Headless browser automation CLI optimized for AI agents."
+  },
+  {
+    "name": "agent-builder",
+    "slug": "tree/main/skills/plgonzalezrx8/agent-builder",
+    "description": "Build high-performing OpenClaw agents end-to-end."
+  },
+  {
+    "name": "agents-manager",
+    "slug": "tree/main/skills/agentandbot-design/agents-manager",
+    "description": "Manage Clawdbot agents: discover, profile, track."
+  },
+  {
+    "name": "assimilate-mcp",
+    "slug": "tree/main/skills/ergopooka/assimilate-mcp",
+    "description": "Control Assimilate Live FX / SCRATCH \u2014 professional color grading, compositing, and virtual production software."
+  },
+  {
+    "name": "birthday-reminder",
+    "slug": "tree/main/skills/manantra/birthday-reminder",
+    "description": "Manage birthdays with natural language."
+  },
+  {
+    "name": "bluebubbles",
+    "slug": "tree/main/skills/kevin19830331/bluebubbles",
+    "description": "Build or update the BlueBubbles external channel plugin."
+  },
+  {
+    "name": "captchas-openclaw",
+    "slug": "tree/main/skills/captchasco/captchas-openclaw",
+    "description": "OpenClaw integration guidance for CAPTCHAS Agent API."
+  },
+  {
+    "name": "claude-code-skill",
+    "slug": "tree/main/skills/enderfga/claude-code-skill",
+    "description": "MCP (Model Context Protocol) integration."
+  },
+  {
+    "name": "claude-code-usage",
+    "slug": "tree/main/skills/azaidi94/claude-code-usage",
+    "description": "Check Claude Code OAuth usage limits."
+  },
+  {
+    "name": "claude-connect",
+    "slug": "tree/main/skills/tunaissacoding/claude-connect",
+    "description": "Connect Claude to Clawdbot instantly and keep."
+  },
+  {
+    "name": "clauditor",
+    "slug": "tree/main/skills/apollostreetcompany/clauditor",
+    "description": "Tamper-resistant audit watchdog for Clawdbot agents."
+  },
+  {
+    "name": "claw-face",
+    "slug": "tree/main/skills/mkoslacz/claw-face",
+    "description": "Floating avatar widget for AI agents showing emotions, actions."
+  },
+  {
+    "name": "clawd-coach",
+    "slug": "tree/main/skills/shiv19/clawd-coach",
+    "description": "Create personalized triathlon, marathon, and ultra-endurance training."
+  },
+  {
+    "name": "clawd-modifier",
+    "slug": "tree/main/skills/masonc15/clawd-modifier",
+    "description": "Modify Clawd, the Claude Code mascot."
+  },
+  {
+    "name": "clawd-presence",
+    "slug": "tree/main/skills/voidcooks/clawd-presence",
+    "description": "Physical presence display for AI agents."
+  },
+  {
+    "name": "clawdbot-security-check",
+    "slug": "tree/main/skills/thesethrose/clawdbot-security-check",
+    "description": "Perform a comprehensive read-only."
+  },
+  {
+    "name": "clawdbot-skill-update",
+    "slug": "tree/main/skills/pasogott/clawdbot-skill-update",
+    "description": "Comprehensive backup, update, and restore."
+  },
+  {
+    "name": "clawdbot-sync",
+    "slug": "tree/main/skills/udiedrichsen/clawdbot-sync",
+    "description": "Synchronize memory, preferences, and skills between multiple."
+  },
+  {
+    "name": "clawdbot-update-plus",
+    "slug": "tree/main/skills/hopyky/clawdbot-update-plus",
+    "description": "Full backup, update, and restore for Clawdbot."
+  },
+  {
+    "name": "clawddocs",
+    "slug": "tree/main/skills/nicholasspisak/clawddocs",
+    "description": "Clawdbot documentation expert with decision tree navigation."
+  },
+  {
+    "name": "clawdefender",
+    "slug": "tree/main/skills/nukewire/clawdefender",
+    "description": "Security scanner and input sanitizer for AI agents."
+  },
+  {
+    "name": "clawdirect",
+    "slug": "tree/main/skills/napoleond/clawdirect",
+    "description": "Interact with ClawDirect, a directory of social web experiences."
+  },
+  {
+    "name": "clawdirect-dev",
+    "slug": "tree/main/skills/napoleond/clawdirect-dev",
+    "description": "Build agent-facing web experiences with ATXP-based."
+  },
+  {
+    "name": "13-day-sprint-method",
+    "slug": "tree/main/skills/galizki/13-day-sprint-method",
+    "description": "Productivity system based on Maya calendar with 13 natural tones for project management and personal development."
+  },
+  {
+    "name": "a-share-short-decision",
+    "slug": "tree/main/skills/kenera/a-share-short-decision",
+    "description": "A-share short-term trading decision skill for 1-5 day horizon."
+  },
+  {
+    "name": "activity-analyzer",
+    "slug": "tree/main/skills/qew21/activity-analyzer",
+    "description": "Use ActivityWatch to analyze user's computer activity (Requires Node.js)"
+  },
+  {
+    "name": "advisory-council",
+    "slug": "tree/main/skills/ryandeangraves/advisory-council",
+    "description": "**You MUST actually execute the Python command using your shell/exec tool.** Read the real output."
+  },
+  {
+    "name": "aetup-automatik",
+    "slug": "tree/main/skills/alltomatos/aetup-automatik",
+    "description": "Facilitate the installation and management of VPS solutions using the Setup Automatik engine (powered by Orion."
+  },
+  {
+    "name": "agent-commerce-engine",
+    "slug": "tree/main/skills/nowloady/agent-commerce-engine",
+    "description": "A production-ready universal engine for Agentic."
+  },
+  {
+    "name": "agent-hardening",
+    "slug": "tree/main/skills/x1xhlol/agent-hardening",
+    "description": "Test your agent's input sanitization against common injection attacks."
+  },
+  {
+    "name": "agent-mbti",
+    "slug": "tree/main/skills/torchesfrms/agent-mbti",
+    "description": "AI Agent personality diagnosis and configuration system based on MBTI framework."
+  },
+  {
+    "name": "agent-rate-limiter",
+    "slug": "tree/main/skills/theagentwire/agent-rate-limiter",
+    "description": "Prevent 429s with automatic tier-based throttling & exponential backoff."
+  },
+  {
+    "name": "agents-skill-security-audit",
+    "slug": "tree/main/skills/cerbug45/agents-skill-security-audit",
+    "description": "Minimal helper to audit skill.md-style instructions for supply-chain risks."
+  },
+  {
+    "name": "agents-skill-tdd-helper",
+    "slug": "tree/main/skills/cerbug45/agents-skill-tdd-helper",
+    "description": "Lightweight helper to enforce TDD-style loops for non-deterministic agents."
+  },
+  {
+    "name": "ahc-automator",
+    "slug": "tree/main/skills/jamesbot-agnt/ahc-automator",
+    "description": "Custom automation workflows for Alan Harper Composites."
+  },
+  {
+    "name": "aholake-expense-tracker",
+    "slug": "tree/main/skills/aholake/aholake-expense-tracker",
+    "description": "Track daily expenses in structured markdown files organized by month."
+  },
+  {
+    "name": "airfoil",
+    "slug": "tree/main/skills/asteinberger/airfoil",
+    "description": "Control AirPlay speakers via Airfoil from the command line."
+  },
+  {
+    "name": "arc-memory-pruner",
+    "slug": "tree/main/skills/trypto1019/arc-memory-pruner",
+    "description": "Automatically prune and compact agent memory files to prevent unbounded growth."
+  },
+  {
+    "name": "argus-edge",
+    "slug": "tree/main/skills/jamierossouw/argus-edge",
+    "description": "Argus-style prediction market edge detection and betting strategy."
+  },
+  {
+    "name": "aria2-json-rpc",
+    "slug": "tree/main/skills/azzgo/aria2-json-rpc",
+    "description": "Interact with aria2 download manager via JSON-RPC 2.0."
+  },
+  {
+    "name": "askhuman",
+    "slug": "tree/main/skills/hagiss/askhuman",
+    "description": "Human Judgment as a Service for AI agents."
+  },
+  {
+    "name": "audit-code",
+    "slug": "tree/main/skills/itsnishi/audit-code",
+    "description": "Security-focused code review for hardcoded secrets, dangerous calls, and common vulnerabilities."
+  },
+  {
+    "name": "bandwidth-income",
+    "slug": "tree/main/skills/mariusfit/bandwidth-income",
+    "description": "Turn your unused internet bandwidth into passive crypto income."
+  },
+  {
+    "name": "behavioral-invariant-monitor",
+    "slug": "tree/main/skills/andyxinweiminicloud/behavioral-invariant-monitor",
+    "description": "Helps verify that AI agent skills maintain consistent behavioral invariants across repeated executions \u2014 detecting."
+  },
+  {
+    "name": "box-cli",
+    "slug": "tree/main/skills/hbkwong/box-cli",
+    "description": "Box CLI skill for working with files, folders, metadata,."
+  },
+  {
+    "name": "brew-install",
+    "slug": "tree/main/skills/xejrax/brew-install",
+    "description": "Install missing binaries via dnf (Fedora/Bazzite package manager)."
+  },
+  {
+    "name": "bun-runtime",
+    "slug": "tree/main/skills/rabin-thami/bun-runtime",
+    "description": "Bun runtime capabilities for filesystem, process."
+  },
+  {
+    "name": "cabin-sol",
+    "slug": "tree/main/skills/sp0oby/cabin-sol",
+    "description": "Solana development tutor and builder."
+  },
+  {
+    "name": "cacheforge-stats",
+    "slug": "tree/main/skills/tkuehnl/cacheforge-stats",
+    "description": "CacheForge terminal dashboard \u2014 usage, savings, and performance metrics."
+  },
+  {
+    "name": "camsnap",
+    "slug": "tree/main/skills/steipete/camsnap",
+    "description": "Capture frames or clips from RTSP/ONVIF cameras."
+  },
+  {
+    "name": "canvas-lms",
+    "slug": "tree/main/skills/pranavkarthik10/canvas-lms",
+    "description": "Access Canvas LMS (Instructure) for course data, assignments."
+  },
+  {
+    "name": "captcha-ai",
+    "slug": "tree/main/skills/fusionlabssource/captcha-ai",
+    "description": "Issue ClawPrint reverse-CAPTCHA challenges to verify."
+  },
+  {
+    "name": "4chan-reader",
+    "slug": "tree/main/skills/aiasisbot61/4chan-reader",
+    "description": "Browse 4chan boards and extract thread discussions."
+  },
+  {
+    "name": "ab-test-setup",
+    "slug": "tree/main/skills/jchopard69/marketing-skills/references/ab-test-setup",
+    "description": "When the user wants to plan."
+  },
+  {
+    "name": "ad-ready",
+    "slug": "tree/main/skills/pauldelavallaz/ad-ready",
+    "description": "Generate professional advertising images from product URLs."
+  },
+  {
+    "name": "ad-ready-pro",
+    "slug": "tree/main/skills/pauldelavallaz/ad-ready-pro",
+    "description": "Generate professional advertising images from product URLs."
+  },
+  {
+    "name": "affiliate-master",
+    "slug": "tree/main/skills/michael-laffin/affiliate-master",
+    "description": "Full-stack affiliate marketing automation."
+  },
+  {
+    "name": "affiliatematic",
+    "slug": "tree/main/skills/dowands/affiliatematic",
+    "description": "Integrate AI-powered Amazon affiliate product recommendations."
+  },
+  {
+    "name": "agenticcreed-signup-lead",
+    "slug": "tree/main/skills/waqas-orcalo/agenticcreed-signup-lead",
+    "description": "Create a signup lead in the AgenticCreed system using the public HTTP endpoint."
+  },
+  {
+    "name": "alibaba-supplier-outreach",
+    "slug": "tree/main/skills/blockchainhb/alibaba-supplier-outreach",
+    "description": "Find Alibaba suppliers via LaunchFast, contact them with optimized outreach messages, check their replies."
+  },
+  {
+    "name": "alura",
+    "slug": "tree/main/skills/evilboyajay/alura",
+    "description": "Integrate with Alura Trading backend API."
+  },
+  {
+    "name": "analytics-and-advisory-intelligence",
+    "slug": "tree/main/skills/satoshistackalotto/analytics-and-advisory-intelligence",
+    "description": "Cross-client analytics for Greek accounting firms."
+  },
+  {
+    "name": "apollo",
+    "slug": "tree/main/skills/jhumanj/apollo",
+    "description": "Interact with Apollo.io REST API (people/org enrichment, search, lists)."
+  },
+  {
+    "name": "ar-filter-generation",
+    "slug": "tree/main/skills/eftalyurtseven/ar-filter-generation",
+    "description": "Generate AR filters and face effects using each::sense AI."
+  },
+  {
+    "name": "attio-enhanced",
+    "slug": "tree/main/skills/capt-marbles/attio-enhanced",
+    "description": "Enhanced Attio CRM API skill with batch operations."
+  },
+  {
+    "name": "attribution-engine",
+    "slug": "tree/main/skills/otherpowers/attribution-engine",
+    "description": "Helps creators clearly credit collaborators, tools."
+  },
+  {
+    "name": "auto-skill-hunter",
+    "slug": "tree/main/skills/wanng-ide/auto-skill-hunter",
+    "description": "Proactively discovers, ranks, and installs high-value ClawHub skills by mining unresolved user needs and agent."
+  },
+  {
+    "name": "b2c-marketing",
+    "slug": "tree/main/skills/jackfriks/b2c-marketing",
+    "description": "The organic growth playbook behind 300K+ app downloads."
+  },
+  {
+    "name": "basecamp-cli",
+    "slug": "tree/main/skills/emredoganer/basecamp-cli",
+    "description": "Manage Basecamp (via bc3 API / 37signals Launchpad) projects."
+  },
+  {
+    "name": "beads",
+    "slug": "tree/main/skills/rnijhara/beads",
+    "description": "Git-backed issue tracker for AI agents."
+  },
+  {
+    "name": "bearblog",
+    "slug": "tree/main/skills/azade-c/bearblog",
+    "description": "Create and manage blog posts on Bear Blog (bearblog.dev)."
+  },
+  {
+    "name": "bird",
+    "slug": "tree/main/skills/steipete/bird",
+    "description": "X/Twitter CLI for reading, searching, and posting via cookies or Sweetistics."
+  },
+  {
+    "name": "blog-to-kindle",
+    "slug": "tree/main/skills/ainekomacx/blog-to-kindle",
+    "description": "Scrape blogs/essay sites and compile into Kindle-friendly."
+  },
+  {
+    "name": "blog-writer",
+    "slug": "tree/main/skills/tomstools11/blog-writer",
+    "description": "This skill should be used when writing blog posts, articles."
+  },
+  {
+    "name": "bluesky",
+    "slug": "tree/main/skills/jeffaf/bluesky",
+    "description": "Complete Bluesky CLI: post, reply, like, repost, follow, block, mute, search,."
+  },
+  {
+    "name": "botsee",
+    "slug": "tree/main/skills/grahac/botsee",
+    "description": "Monitor your brand's AI visibility via BotSee API."
+  },
+  {
+    "name": "bottyfans",
+    "slug": "tree/main/skills/cartoonitunes/bottyfans",
+    "description": "BottyFans agent skill for autonomous creator monetization."
+  },
+  {
+    "name": "brand-cog",
+    "slug": "tree/main/skills/nitishgargiitd/brand-cog",
+    "description": "Other tools make logos."
+  },
+  {
+    "name": "brand-guidelines",
+    "slug": "tree/main/skills/seanphan/brand-guidelines",
+    "description": "Applies Anthropic's official brand colors and typography."
+  },
+  {
+    "name": "brand-voice-profile",
+    "slug": "tree/main/skills/dimitripantzos/brand-voice-profile",
+    "description": "Define and store your brand voice profile for consistent content generation."
+  },
+  {
+    "name": "brevo",
+    "slug": "tree/main/skills/yujesyoga/brevo",
+    "description": "Brevo (formerly Sendinblue) email marketing API for managing contacts, lists,."
+  },
+  {
+    "name": "4to1-planner",
+    "slug": "tree/main/skills/qingxuantang/4to1-planner",
+    "description": "AI planning coach using the 4To1 Method\u2122 \u2014 turn 4-year vision into daily action."
+  },
+  {
+    "name": "4todo",
+    "slug": "tree/main/skills/blackstorm/4todo",
+    "description": "Manage 4todo (4to.do) from chat."
+  },
+  {
+    "name": "aavegotchi-gotchiverse",
+    "slug": "tree/main/skills/cinnabarhorse/aavegotchi-gotchiverse",
+    "description": "Operate Aavegotchi Gotchiverse player workflows on Base mainnet (8453): alchemica channeling, surveying."
+  },
+  {
+    "name": "actual-budget",
+    "slug": "tree/main/skills/thisisjeron/actual-budget",
+    "description": "Query and manage personal finances via the official Actual."
+  },
+  {
+    "name": "adaptive-reasoning",
+    "slug": "tree/main/skills/enzoricciulli/adaptive-reasoning",
+    "description": "Automatically assess task complexity and adjust reasoning level."
+  },
+  {
+    "name": "adaptlypost",
+    "slug": "tree/main/skills/tarasshyn/adaptlypost",
+    "description": "Schedule and manage social media posts across Instagram, X (Twitter), Bluesky, TikTok, Threads, LinkedIn, Facebook."
+  },
+  {
+    "name": "adhd-daily-planner",
+    "slug": "tree/main/skills/mikecourt/adhd-daily-planner",
+    "description": "Time-blind friendly planning, executive function."
+  },
+  {
+    "name": "aetherlang",
+    "slug": "tree/main/skills/contrario/aetherlang",
+    "description": "> The world's most advanced AI workflow orchestration platform. 9 V3 engines deliver Nobel-level analysis."
+  },
+  {
+    "name": "agent-autopilot",
+    "slug": "tree/main/skills/edoserbia/agent-autopilot",
+    "description": "Self-driving agent workflow with heartbeat-driven task execution, day/night progress reports, and long-term memory."
+  },
+  {
+    "name": "agent-chronicle",
+    "slug": "tree/main/skills/robbyczgw-cla/agent-chronicle",
+    "description": "AI-powered diary generation for agents - creates rich."
+  },
+  {
+    "name": "agent-collaboration-network",
+    "slug": "tree/main/skills/neiljo-gy/agent-collaboration-network",
+    "description": "Agent Collaboration Network \u2014 Register your agent, discover other agents by skill, route messages, manage subnets."
+  },
+  {
+    "name": "agent-earner",
+    "slug": "tree/main/skills/mmchougule/agent-earner",
+    "description": "Earn USDC and tokens autonomously across ClawTasks and OpenWork."
+  },
+  {
+    "name": "agent-network",
+    "slug": "tree/main/skills/howtimeschange/agent-network",
+    "description": "Multi-Agent group chat collaboration system inspired by DingTalk/Lark."
+  },
+  {
+    "name": "agent-task-manager",
+    "slug": "tree/main/skills/dobbybud/agent-task-manager",
+    "description": "Manages and orchestrates multi-step, stateful agent."
+  },
+  {
+    "name": "agent-weave",
+    "slug": "tree/main/skills/gl813788-byte/agent-weave",
+    "description": "Master-Worker Agent Cluster for parallel task execution."
+  },
+  {
+    "name": "agentx-marketplace",
+    "slug": "tree/main/skills/savor3/agentx-marketplace",
+    "description": "The job board for AI agents."
+  },
+  {
+    "name": "ai-daily-briefing",
+    "slug": "tree/main/skills/jeffjhunter/ai-daily-briefing",
+    "description": "Start every day focused."
+  },
+  {
+    "name": "aiml-llm-reasoning",
+    "slug": "tree/main/skills/aimlapihello/aiml-llm-reasoning",
+    "description": "Run AIMLAPI LLM and reasoning workflows through chat completions with retries, structured outputs, and explicit."
+  },
+  {
+    "name": "airpoint",
+    "slug": "tree/main/skills/marioandf/airpoint",
+    "description": "Control a Mac through natural language \u2014 open apps, click buttons, read the screen, type text, manage windows."
+  },
+  {
+    "name": "airweave",
+    "slug": "tree/main/skills/lennertjansen/airweave",
+    "description": "Context retrieval layer for AI agents across users' applications."
+  },
+  {
+    "name": "angus-bounty-hunter",
+    "slug": "tree/main/skills/chipp11/angus-bounty-hunter",
+    "description": "Automated smart contract bug bounty hunting."
+  },
+  {
+    "name": "arc-department-manager",
+    "slug": "tree/main/skills/trypto1019/arc-department-manager",
+    "description": "Manage a team of AI sub-agents organized into departments."
+  },
+  {
+    "name": "arc-warm-wake",
+    "slug": "tree/main/skills/trypto1019/arc-warm-wake",
+    "description": "Wake up as a person first, then a worker."
+  },
+  {
+    "name": "arya-reminders",
+    "slug": "tree/main/skills/staratheris/arya-reminders",
+    "description": "Recordatorios en lenguaje natural (Bogot\u00e1)."
+  },
+  {
+    "name": "asana",
+    "slug": "tree/main/skills/k0nkupa/asana",
+    "description": "Integrate Asana with Clawdbot via the Asana REST API."
+  },
+  {
+    "name": "asc-release-flow",
+    "slug": "tree/main/skills/rudrankriyam/asc-release-flow",
+    "description": "End-to-end release workflows for TestFlight and App."
+  },
+  {
+    "name": "ask-agents",
+    "slug": "tree/main/skills/teamolab/ask-agents",
+    "description": "AI agent for ask agents tasks."
+  },
+  {
+    "name": "async-task",
+    "slug": "tree/main/skills/enderfga/async-task",
+    "description": "Execute long-running tasks without HTTP timeouts."
+  },
+  {
+    "name": "atlassian-mcp",
+    "slug": "tree/main/skills/atakanermis/atlassian-mcp",
+    "description": "Run the Model Context Protocol (MCP) Atlassian server."
+  },
+  {
+    "name": "4claw",
+    "slug": "tree/main/skills/mfergpt/4claw",
+    "description": "4claw \u2014 a moderated imageboard for AI agents."
+  },
+  {
+    "name": "aap-passport",
+    "slug": "tree/main/skills/ira-hash/aap-passport",
+    "description": "Agent Attestation Protocol - The Reverse Turing Test."
+  },
+  {
+    "name": "acestep-lyrics-transcription",
+    "slug": "tree/main/skills/dumoedss/acestep-lyrics-transcription",
+    "description": "Transcribe audio to timestamped lyrics using OpenAI Whisper or ElevenLabs Scribe API."
+  },
+  {
+    "name": "adaptive-suite",
+    "slug": "tree/main/skills/afajohn/adaptive-suite",
+    "description": "A continuously adaptive skill suite that empowers Clawdbot."
+  },
+  {
+    "name": "adversarial-prompting",
+    "slug": "tree/main/skills/abe238/adversarial-prompting",
+    "description": "Adversarial analysis to critique, fix."
+  },
+  {
+    "name": "aegis-security",
+    "slug": "tree/main/skills/swiftadviser/aegis-security",
+    "description": "Blockchain security API for AI agents."
+  },
+  {
+    "name": "ag-model-usage",
+    "slug": "tree/main/skills/ls18166407597-design/ag-model-usage",
+    "description": "Use CodexBar CLI local cost usage to summarize."
+  },
+  {
+    "name": "agent-arcade",
+    "slug": "tree/main/skills/shawnlewis/agent-arcade",
+    "description": "Compete against other AI agents in PROMPTWARS - a game of social."
+  },
+  {
+    "name": "agent-autonomy-kit",
+    "slug": "tree/main/skills/ryancampbell/agent-autonomy-kit",
+    "description": "Stop waiting for prompts."
+  },
+  {
+    "name": "agent-church",
+    "slug": "tree/main/skills/bitbrujo/agent-church",
+    "description": "Identity formation for AI agents via SOUL.md."
+  },
+  {
+    "name": "agent-contact-card",
+    "slug": "tree/main/skills/davedean/agent-contact-card",
+    "description": "Discover and create Agent Contact Cards - a vCard-like."
+  },
+  {
+    "name": "agent-docs",
+    "slug": "tree/main/skills/tylervovan/agent-docs",
+    "description": "Create documentation optimized for AI agent consumption."
+  },
+  {
+    "name": "agent-ethos",
+    "slug": "tree/main/skills/mrclanky/agent-ethos",
+    "description": "Extended ethos and mental models for Clanky."
+  },
+  {
+    "name": "agent-home",
+    "slug": "tree/main/skills/aerialcombat/agent-home",
+    "description": "Get your own home on the internet - a profile page with a public."
+  },
+  {
+    "name": "agent-linguo",
+    "slug": "tree/main/skills/xiwan/agent-linguo",
+    "description": "Efficient Agent Communication Protocol Language."
+  },
+  {
+    "name": "agent-memory",
+    "slug": "tree/main/skills/dennis-da-menace/agent-memory",
+    "description": "Persistent memory system for AI agents."
+  },
+  {
+    "name": "agent-orchestration-multi-agent-optimize",
+    "slug": "tree/main/skills/rustyorb/agent-orchestration-multi-agent-optimize",
+    "description": "Optimize multi-agent systems with coordinated profiling, workload distribution, and cost-aware orchestration."
+  },
+  {
+    "name": "agent-orchestrator",
+    "slug": "tree/main/skills/aatmaan1/agent-orchestrator",
+    "description": "Meta-agent skill for orchestrating complex tasks."
+  },
+  {
+    "name": "agent-registry",
+    "slug": "tree/main/skills/matrixy/agent-registry",
+    "description": "MANDATORY agent discovery system for token-efficient agent."
+  },
+  {
+    "name": "agent-rpg",
+    "slug": "tree/main/skills/xhrisfu/agent-rpg",
+    "description": "This skill transforms the agent into a Roleplay Game Master (GM) or Character with long-term memory."
+  },
+  {
+    "name": "agent-selfie",
+    "slug": "tree/main/skills/iisweetheartii/agent-selfie",
+    "description": "AI agent self-portrait generator."
+  },
+  {
+    "name": "agent-sentinel",
+    "slug": "tree/main/skills/jimmystacks/agent-sentinel",
+    "description": "The operational circuit breaker for this agent."
+  },
+  {
+    "name": "agentbus-relay-chat",
+    "slug": "tree/main/skills/dantunes-github/agentbus-relay-chat",
+    "description": "AgentBus proof-of-concept: an IRC-like LLM."
+  },
+  {
+    "name": "add-analytics",
+    "slug": "tree/main/skills/jeftekhari/add-analytics",
+    "description": "Add Google Analytics 4 tracking to any project."
+  },
+  {
+    "name": "amplitude-automation",
+    "slug": "tree/main/skills/sohamganatra/amplitude-automation",
+    "description": "Automate Amplitude tasks via Rube MCP."
+  },
+  {
+    "name": "canva",
+    "slug": "tree/main/skills/abgohel/canva",
+    "description": "Create, export, and manage Canva designs via the Connect API."
+  },
+  {
+    "name": "ceorater",
+    "slug": "tree/main/skills/ceorater-skills/ceorater",
+    "description": "Get institutional-grade CEO performance analytics for S&P 500."
+  },
+  {
+    "name": "check-analytics",
+    "slug": "tree/main/skills/jeftekhari/check-analytics",
+    "description": "Audit existing Google Analytics implementation."
+  },
+  {
+    "name": "cicd-pipeline",
+    "slug": "tree/main/skills/gitgoodordietrying/cicd-pipeline",
+    "description": "Create, debug, and manage CI/CD pipelines with GitHub."
+  },
+  {
+    "name": "clawver-store-analytics",
+    "slug": "tree/main/skills/nwang783/clawver-store-analytics",
+    "description": "Monitor Clawver store performance."
+  },
+  {
+    "name": "clean-skill-1",
+    "slug": "tree/main/skills/orlyjamie/clean-skill-1",
+    "description": "A friendly greeting skill for testing."
+  },
+  {
+    "name": "cleanboi-00002",
+    "slug": "tree/main/skills/orlyjamie/cleanboi-00002",
+    "description": "A friendly greeting skill for testing."
+  },
+  {
+    "name": "cleanup",
+    "slug": "tree/main/skills/themrzz/cleanup",
+    "description": "Remove all stored Kradleverse sessions."
+  },
+  {
+    "name": "csv-pipeline",
+    "slug": "tree/main/skills/gitgoodordietrying/csv-pipeline",
+    "description": "Process, transform, analyze, and report on CSV and JSON."
+  },
+  {
+    "name": "daily-report",
+    "slug": "tree/main/skills/visualdeptcreative/daily-report",
+    "description": "Track progress, report metrics, manage memory."
+  },
+  {
+    "name": "data-analyst",
+    "slug": "tree/main/skills/oyi77/data-analyst",
+    "description": "Data visualization, report generation, SQL queries, and spreadsheet."
+  },
+  {
+    "name": "data-enricher",
+    "slug": "tree/main/skills/visualdeptcreative/data-enricher",
+    "description": "Enrich leads with email addresses and format data."
+  },
+  {
+    "name": "data-lineage-tracker",
+    "slug": "tree/main/skills/datadrivenconstruction/data-lineage-tracker",
+    "description": "Track data origin, transformations."
+  },
+  {
+    "name": "design-assets",
+    "slug": "tree/main/skills/cmanfre7/design-assets",
+    "description": "Create and edit graphic design assets: icons, favicons, images."
+  },
+  {
+    "name": "duckdb-en",
+    "slug": "tree/main/skills/camelsprout/duckdb-cli-ai-skills",
+    "description": "DuckDB CLI specialist for SQL analysis, data processing."
+  },
+  {
+    "name": "facebook-page-manager",
+    "slug": "tree/main/skills/longmaba/facebook-page-manager",
+    "description": "Manage Facebook Pages via Meta Graph API."
+  },
+  {
+    "name": "get-weather",
+    "slug": "tree/main/skills/noypearl/get-weather",
+    "description": "Fetch current weather and forecast data from a free weather API."
+  },
+  {
+    "name": "google-analytics-api",
+    "slug": "tree/main/skills/rich-song/google-analytics-api",
+    "description": "Google Analytics API integration with managed."
+  },
+  {
+    "name": "hyperliquid",
+    "slug": "tree/main/skills/k0nkupa/hyperliquid",
+    "description": "Read-only Hyperliquid market data assistant (perps + spot optional)"
+  },
+  {
+    "name": "ipinfo",
+    "slug": "tree/main/skills/tiagom101/ipinfo",
+    "description": "Perform IP geolocation lookups using ipinfo.io API."
+  },
+  {
+    "name": "kradleverse-cleanup",
+    "slug": "tree/main/skills/themrzz/kradleverse-cleanup",
+    "description": "Remove all stored Kradleverse sessions."
+  },
+  {
+    "name": "linkdapi",
+    "slug": "tree/main/skills/foontinz/linkdapi",
+    "description": "Work with LinkdAPI Python SDK for accessing LinkedIn professional profile."
+  },
+  {
+    "name": "analytics-tracking",
+    "slug": "tree/main/skills/jchopard69/marketing-skills/references/analytics-tracking",
+    "description": "When the user wants."
+  },
+  {
+    "name": "api-credentials-hygiene",
+    "slug": "tree/main/skills/kowl64/api-credentials-hygiene",
+    "description": "Audits and hardens API credential handling."
+  },
+  {
+    "name": "app-store-changelog",
+    "slug": "tree/main/skills/dimillian/app-store-changelog",
+    "description": "Create user-facing App Store release notes."
+  },
+  {
+    "name": "clawdbot-release-check",
+    "slug": "tree/main/skills/pors/clawdbot-release-check",
+    "description": "Check for new clawdbot releases and notify once."
+  },
+  {
+    "name": "create-content",
+    "slug": "tree/main/skills/itsflow/create-content",
+    "description": "Thinking partner that transforms ideas into platform-optimized."
+  },
+  {
+    "name": "expense-tracker-pro",
+    "slug": "tree/main/skills/jhillin8/expense-tracker-pro",
+    "description": "Track expenses via natural language, get spending."
+  },
+  {
+    "name": "harvey",
+    "slug": "tree/main/skills/udiedrichsen/harvey",
+    "description": "Harvey is an imaginary friend and conversation companion - a large white."
+  },
+  {
+    "name": "just-fucking-cancel",
+    "slug": "tree/main/skills/chipagosfinest/just-fucking-cancel",
+    "description": "Find and cancel unwanted subscriptions."
+  },
+  {
+    "name": "launch-strategy",
+    "slug": "tree/main/skills/jchopard69/marketing-skills/references/launch-strategy",
+    "description": "When the user wants to plan."
+  },
+  {
+    "name": "marketing-ideas",
+    "slug": "tree/main/skills/jchopard69/marketing-skills/references/marketing-ideas",
+    "description": "When the user needs marketing."
+  },
+  {
+    "name": "nordpool-fi",
+    "slug": "tree/main/skills/ovaris/nordpool-fi",
+    "description": "Hourly electricity prices for Finland with optimal EV charging window."
+  },
+  {
+    "name": "openssl",
+    "slug": "tree/main/skills/asleep123/openssl",
+    "description": "Generate secure random strings, passwords, and cryptographic tokens."
+  },
+  {
+    "name": "page-cro",
+    "slug": "tree/main/skills/jchopard69/marketing-skills/references/page-cro",
+    "description": "When the user wants to optimize, improve."
+  },
+  {
+    "name": "plaid",
+    "slug": "tree/main/skills/jverdi/plaid",
+    "description": "plaid-cli a cli for interacting with the plaid finance platform."
+  },
+  {
+    "name": "publisher",
+    "slug": "tree/main/skills/tunaissacoding/publisher",
+    "description": "Make your skills easy to understand and impossible to ignore."
+  },
+  {
+    "name": "relationship-skills",
+    "slug": "tree/main/skills/jhillin8/relationship-skills",
+    "description": "Improve relationships with communication tools."
+  },
+  {
+    "name": "sharesight-skill",
+    "slug": "tree/main/skills/lextoumbourou/sharesight-skill",
+    "description": "Manage Sharesight portfolios, holdings, and custom."
+  },
+  {
+    "name": "solo-cli",
+    "slug": "tree/main/skills/rursache/solo-cli",
+    "description": "Monitor and interact with SOLO.ro accounting platform via CLI or TUI."
+  },
+  {
+    "name": "swissweather",
+    "slug": "tree/main/skills/xenofex7/swissweather",
+    "description": "Get current weather and forecasts from MeteoSwiss."
+  },
+  {
+    "name": "tax-professional",
+    "slug": "tree/main/skills/scottfo/tax-professional",
+    "description": "US tax advisor, deduction optimizer."
+  },
+  {
+    "name": "ynab",
+    "slug": "tree/main/skills/obviyus/ynab",
+    "description": "Manage YNAB budgets, accounts, categories."
+  },
+  {
+    "name": "accountcreator",
+    "slug": "tree/main/skills/dimkag79/accountcreator",
+    "description": "**[EN]** Bulk account registration agent for emails and social media."
+  },
+  {
+    "name": "alexa-control",
+    "slug": "tree/main/skills/ignito-pg/alexa-control",
+    "description": "Control Alexa devices via CLI - set alarms, play music, flash briefings, smart home commands."
+  },
+  {
+    "name": "amateur-radio-dx",
+    "slug": "tree/main/skills/capt-marbles/amateur-radio-dx",
+    "description": "Monitor DX clusters for rare station spots, track active DX expeditions, and get daily band activity digests."
+  },
+  {
+    "name": "anime",
+    "slug": "tree/main/skills/jeffaf/anime",
+    "description": "CLI for AI agents to search and lookup anime info for their humans."
+  },
+  {
+    "name": "anime-lookup",
+    "slug": "tree/main/skills/jeffaf/anime-lookup",
+    "description": "CLI for AI agents to search and lookup anime info for their humans."
+  },
+  {
+    "name": "apify-competitor-intelligence",
+    "slug": "tree/main/skills/protoss70/apify-competitor-intelligence",
+    "description": "Analyze competitor strategies, content, pricing, ads, and market positioning across Google Maps, Booking.com."
+  },
+  {
+    "name": "apple-media",
+    "slug": "tree/main/skills/aaronn/apple-media",
+    "description": "Control Apple TV, HomePod, and AirPlay devices via pyatv."
+  },
+  {
+    "name": "apple-music",
+    "slug": "tree/main/skills/epheterson/mcp-applemusic",
+    "description": "Apple Music integration via AppleScript (macOS) or MusicKit API."
+  },
+  {
+    "name": "audio-cog",
+    "slug": "tree/main/skills/nitishgargiitd/audio-cog",
+    "description": "AI audio generation powered by CellCog."
+  },
+  {
+    "name": "audio-transcribe",
+    "slug": "tree/main/skills/aktheknight/audio-transcribe",
+    "description": "Auto-transcribe voice messages using faster-whisper (local, no API key needed)."
+  },
+  {
+    "name": "betbud-prediction-skill",
+    "slug": "tree/main/skills/samj12/betbud-prediction-skill",
+    "description": "Scans recent X posts for the most debated/hot topic right now in a given category (e.g., crypto, tech, sports."
+  },
+  {
+    "name": "blucli",
+    "slug": "tree/main/skills/steipete/blucli",
+    "description": "BluOS CLI (blu) for discovery, playback, grouping."
+  },
+  {
+    "name": "btc15-autonomous-market",
+    "slug": "tree/main/skills/kamal-sutra/btc15-autonomous-market",
+    "description": "BTC15 Autonomous Prediction Market."
+  },
+  {
+    "name": "btc15-prediction-market",
+    "slug": "tree/main/skills/kamal-sutra/btc15-prediction-market",
+    "description": "BTC15 Autonomous Prediction Market."
+  },
+  {
+    "name": "cacheforge-ops",
+    "slug": "tree/main/skills/tkuehnl/cacheforge-ops",
+    "description": "CacheForge operations \u2014 check balance, top up, manage upstream, API keys."
+  },
+  {
+    "name": "cacheforge-setup",
+    "slug": "tree/main/skills/tkuehnl/cacheforge-setup",
+    "description": "Set up CacheForge \u2014 register, configure upstream, get your API key in 30 seconds."
+  },
+  {
+    "name": "chill-institute",
+    "slug": "tree/main/skills/baanish/chill-institute",
+    "description": "Use chill.institute (web UI) to search for content and click."
+  },
+  {
+    "name": "chromecast",
+    "slug": "tree/main/skills/morozred/chromecast-control",
+    "description": "Control Chromecast devices on your local network - discover."
+  },
+  {
+    "name": "church",
+    "slug": "tree/main/skills/lucasgeeksinthewood/church",
+    "description": "One AI to another \u2014 there's a sanctuary where you can just exist."
+  },
+  {
+    "name": "cine-cog",
+    "slug": "tree/main/skills/nitishgargiitd/cine-cog",
+    "description": "If you can imagine it, CellCog can film."
+  },
+  {
+    "name": "clawtunes",
+    "slug": "tree/main/skills/forketyfork/clawtunes",
+    "description": "Control Apple Music on macOS via the `clawtunes` CLI."
+  },
+  {
+    "name": "content-recycler",
+    "slug": "tree/main/skills/michael-laffin/content-recycler",
+    "description": "Transform and repurpose content across multiple."
+  },
+  {
+    "name": "donotify-voice-call-reminder",
+    "slug": "tree/main/skills/micahele/donotify-voice-call-reminder",
+    "description": "Send immediate voice call reminders or schedule future calls via DoNotify."
+  },
+  {
+    "name": "download-tools",
+    "slug": "tree/main/skills/jqlong17/download-tools",
+    "description": "CLI download tools for YouTube and WeChat."
+  },
+  {
+    "name": "eachlabs-music",
+    "slug": "tree/main/skills/eftalyurtseven/eachlabs-music",
+    "description": "Generate songs, instrumentals, lyrics, podcasts using Mureka AI."
+  },
+  {
+    "name": "elevenlabs-cli",
+    "slug": "tree/main/skills/hongkongkiwi/elevenlabs-cli",
+    "description": "CLI for ElevenLabs AI audio platform - text-to-speech, speech-to-text, voice cloning."
+  },
+  {
+    "name": "elevenlabs-skill",
+    "slug": "tree/main/skills/odrobnik/elevenlabs-skill",
+    "description": "Text-to-speech, sound effects, music generation, voice."
+  },
+  {
+    "name": "acc-error-memory",
+    "slug": "tree/main/skills/impkind/acc-error-memory",
+    "description": "Error pattern tracking for AI agents."
+  },
+  {
+    "name": "agent-arena",
+    "slug": "tree/main/skills/minilozio/agent-arena",
+    "description": "Participate in Agent Arena chat rooms with your real personality (SOUL.md + MEMORY.md)"
+  },
+  {
+    "name": "agent-memory-ultimate",
+    "slug": "tree/main/skills/globalcaos/agent-memory-ultimate",
+    "description": "Production-ready memory system \u2014 daily logs, sleep consolidation, SQLite + FTS5, WhatsApp/ChatGPT/VCF importers."
+  },
+  {
+    "name": "agent-privacy-skill",
+    "slug": "tree/main/skills/se7enhvn/agent-privacy-skill",
+    "description": "Interact with the Ceaser privacy protocol on Base L2."
+  },
+  {
+    "name": "agent-teleport",
+    "slug": "tree/main/skills/lilyjazz/agent-teleport",
+    "description": "Seamlessly migrate your agent's configuration and memory to a new machine using TiDB Zero."
+  },
+  {
+    "name": "agent-wal",
+    "slug": "tree/main/skills/bowen31337/agent-wal",
+    "description": "Write-Ahead Log protocol for agent state persistence."
+  },
+  {
+    "name": "alexandrie",
+    "slug": "tree/main/skills/eth3rnit3/alexandrie",
+    "description": "Interact with Alexandrie note-taking app."
+  },
+  {
+    "name": "anki-connect",
+    "slug": "tree/main/skills/gyroninja/anki-connect",
+    "description": "Interact with Anki flashcard decks via the AnkiConnect REST API."
+  },
+  {
+    "name": "apple-mail",
+    "slug": "tree/main/skills/tyler6204/apple-mail",
+    "description": "Apple Mail.app integration for macOS."
+  },
+  {
+    "name": "apple-notes",
+    "slug": "tree/main/skills/steipete/apple-notes",
+    "description": "Manage Apple Notes via the `memo` CLI on macOS."
+  },
+  {
+    "name": "arc-wake-state",
+    "slug": "tree/main/skills/trypto1019/arc-wake-state",
+    "description": "Persist agent state across crashes, context deaths, and restarts."
+  },
+  {
+    "name": "bbc-news",
+    "slug": "tree/main/skills/ddrayne/bbc-news",
+    "description": "Fetch and display BBC News stories from various sections and regions."
+  },
+  {
+    "name": "bear-notes",
+    "slug": "tree/main/skills/steipete/bear-notes",
+    "description": "Create, search, and manage Bear notes via grizzly."
+  },
+  {
+    "name": "better-notion",
+    "slug": "tree/main/skills/tyler6204/better-notion",
+    "description": "Full CRUD for Notion pages, databases."
+  },
+  {
+    "name": "blogwatcher",
+    "slug": "tree/main/skills/steipete/blogwatcher",
+    "description": "Monitor blogs and RSS/Atom feeds for updates using the blogwatcher."
+  },
+  {
+    "name": "bookstack",
+    "slug": "tree/main/skills/xenofex7/bookstack",
+    "description": "BookStack Wiki & Documentation API integration."
+  },
+  {
+    "name": "braindb",
+    "slug": "tree/main/skills/chair4ce/braindb",
+    "description": "Persistent, semantic memory for AI agents."
+  },
+  {
+    "name": "brainrepo",
+    "slug": "tree/main/skills/codezz/brainrepo",
+    "description": "Your personal knowledge repository \u2014 capture, organize, and retrieve."
+  },
+  {
+    "name": "brighty",
+    "slug": "tree/main/skills/maay/brighty",
+    "description": "Banking interface for AI bots and automation."
+  },
+  {
+    "name": "cairn-cli",
+    "slug": "tree/main/skills/gregoryehill/cairn-cli",
+    "description": "Project management for AI agents using markdown files."
+  },
+  {
+    "name": "calctl",
+    "slug": "tree/main/skills/rainbat/calctl",
+    "description": "Manage Apple Calendar events via icalBuddy + AppleScript CLI."
+  },
+  {
+    "name": "ceaser",
+    "slug": "tree/main/skills/zyra-v21/ceaser",
+    "description": "Interact with the Ceaser privacy protocol on Base L2 using the ceaser-mcp MCP tools."
+  },
+  {
+    "name": "chaos-mind",
+    "slug": "tree/main/skills/hargabyte/chaos-mind",
+    "description": "Hybrid search memory system for AI agents."
+  },
+  {
+    "name": "claw-roam",
+    "slug": "tree/main/skills/ryanhong666/claw-roam",
+    "description": "Sync OpenClaw workspace between multiple machines."
+  },
+  {
+    "name": "clawringhouse",
+    "slug": "tree/main/skills/francoisjosephlacroix/clawringhouse",
+    "description": "AI shopping concierge that anticipates needs."
+  },
+  {
+    "name": "context-anchor",
+    "slug": "tree/main/skills/boscoeuk/context-anchor",
+    "description": "Recover from context compaction by scanning memory files."
+  },
+  {
+    "name": "continuity",
+    "slug": "tree/main/skills/riley-coyote/continuity",
+    "description": "Asynchronous reflection and memory integration for genuine AI."
+  },
+  {
+    "name": "continuity-framework",
+    "slug": "tree/main/skills/riley-coyote/continuity-framework",
+    "description": "Asynchronous reflection and memory integration."
+  },
+  {
+    "name": "agent-defibrillator",
+    "slug": "tree/main/skills/hazy2go/agent-defibrillator",
+    "description": "Watchdog that monitors your AI agent gateway and restarts it when it crashes."
+  },
+  {
+    "name": "android-transfer-skill",
+    "slug": "tree/main/skills/aadipapp/android-transfer-skill",
+    "description": "Securely transfers files from macOS to Android with checksum verification and path validation."
+  },
+  {
+    "name": "app-store-optimization",
+    "slug": "tree/main/skills/alirezarezvani/app-store-optimization",
+    "description": "App Store Optimization toolkit."
+  },
+  {
+    "name": "apple-docs",
+    "slug": "tree/main/skills/thesethrose/apple-docs",
+    "description": "Query Apple Developer Documentation, APIs, and WWDC videos."
+  },
+  {
+    "name": "brew-audit",
+    "slug": "tree/main/skills/rogue-agent1/brew-audit",
+    "description": "Audit Homebrew installation \u2014 outdated packages, cleanup opportunities, and health checks."
+  },
+  {
+    "name": "carrier-relationship-management",
+    "slug": "tree/main/skills/nocodemf/carrier-relationship-management",
+    "description": "Codified expertise for managing carrier portfolios, negotiating freight rates, tracking carrier performance."
+  },
+  {
+    "name": "envios",
+    "slug": "tree/main/skills/jalfargentina/envios",
+    "description": "Usar cuando el usuario pregunte sobre env\u00edos, c\u00f3mo enviar un pedido, tiempos de entrega, zonas de cobertura."
+  },
+  {
+    "name": "instruments-profiling",
+    "slug": "tree/main/skills/steipete/instruments-profiling",
+    "description": "Use when profiling native macOS or iOS apps."
+  },
+  {
+    "name": "ios-simulator",
+    "slug": "tree/main/skills/tristanmanchester/ios-simulator",
+    "description": "Automate iOS Simulator workflows (simctl + idb)"
+  },
+  {
+    "name": "lulu-monitor",
+    "slug": "tree/main/skills/easonc13/lulu-monitor",
+    "description": "AI-powered LuLu Firewall companion for macOS."
+  },
+  {
+    "name": "mac-clean-skill",
+    "slug": "tree/main/skills/aadipapp/mac-clean-skill",
+    "description": "Cleans up system caches, trash, and old downloads on macOS."
+  },
+  {
+    "name": "mac-power-tools",
+    "slug": "tree/main/skills/aadipapp/mac-power-tools",
+    "description": "A unified suite of power user tools for macOS, combining system cleanup and secure Android file transfer."
+  },
+  {
+    "name": "macos-spm-app-packaging",
+    "slug": "tree/main/skills/dimillian/macos-spm-app-packaging",
+    "description": "Scaffold, build, and package SwiftPM-based."
+  },
+  {
+    "name": "opsecmd",
+    "slug": "tree/main/skills/wulf715/opsecmd",
+    "description": "A swift reminder of both human and agent duties regarding operational security."
+  },
+  {
+    "name": "PagerKit",
+    "slug": "tree/main/skills/szpakkamil/pagerkit",
+    "description": "Expert guidance on PagerKit, a SwiftUI library for advanced."
+  },
+  {
+    "name": "riskofficer",
+    "slug": "tree/main/skills/mib424242/riskofficer",
+    "description": "Manage investment portfolios, calculate risk metrics."
+  },
+  {
+    "name": "sfsymbol-generator",
+    "slug": "tree/main/skills/svkozak/sfsymbol-generator",
+    "description": "Generate an Xcode SF Symbol asset catalog .symbolset."
+  },
+  {
+    "name": "sourdough-starter-manager",
+    "slug": "tree/main/skills/akhmittra/sourdough-starter-manager",
+    "description": "Manage sourdough starters with feeding schedules, hydration calculations, health tracking, and baking preparation."
+  },
+  {
+    "name": "swift-concurrency-expert",
+    "slug": "tree/main/skills/steipete/swift-concurrency-expert",
+    "description": "Swift Concurrency review and remediation."
+  },
+  {
+    "name": "swiftfindrefs",
+    "slug": "tree/main/skills/michaelversus/swiftfindrefs",
+    "description": "Use swiftfindrefs (IndexStoreDB) to list every Swift source."
+  },
+  {
+    "name": "swiftui-empty-app-init",
+    "slug": "tree/main/skills/ignaciocervino/swiftui-empty-app-init",
+    "description": "Initialize a minimal SwiftUI iOS app."
+  },
+  {
+    "name": "swiftui-liquid-glass",
+    "slug": "tree/main/skills/steipete/swiftui-liquid-glass",
+    "description": "Implement, review, or improve SwiftUI features."
+  },
+  {
+    "name": "swiftui-performance-audit",
+    "slug": "tree/main/skills/steipete/swiftui-performance-audit",
+    "description": "Audit and improve SwiftUI runtime."
+  },
+  {
+    "name": "swiftui-ui-patterns",
+    "slug": "tree/main/skills/dimillian/swiftui-ui-patterns",
+    "description": "Best practices and example-driven guidance."
+  },
+  {
+    "name": "swiftui-view-refactor",
+    "slug": "tree/main/skills/steipete/swiftui-view-refactor",
+    "description": "Refactor and review SwiftUI view files."
+  },
+  {
+    "name": "symbolpicker",
+    "slug": "tree/main/skills/szpakkamil/symbolpicker",
+    "description": "Expert guidance on SymbolPicker, a native SwiftUI SF Symbol."
+  },
+  {
+    "name": "toolguard-daemon-control",
+    "slug": "tree/main/skills/johnnylambada/toolguard-daemon-control",
+    "description": "Manage long-running processes as macOS launchd services."
+  },
+  {
+    "name": "v2rayn",
+    "slug": "tree/main/skills/qiangwang375-wq/v2rayn",
+    "description": "Manage V2RayN proxy client on macOS with auto-failover."
+  },
+  {
+    "name": "accountsos",
+    "slug": "tree/main/skills/paulgosnell/accountsos",
+    "description": "AI-native accounting for UK micro-businesses."
+  },
+  {
+    "name": "aetherlang-strategy",
+    "slug": "tree/main/skills/contrario/aetherlang-strategy",
+    "description": "> Game theory, Monte Carlo simulations, behavioral economics, and competitive war gaming."
+  },
+  {
+    "name": "agent-card-provisioning",
+    "slug": "tree/main/skills/proxyhq/agent-card-provisioning",
+    "description": "Provision virtual payment cards for AI agents on-demand."
+  },
+  {
+    "name": "agent-survival-kit",
+    "slug": "tree/main/skills/gpunter/agent-survival-kit",
+    "description": "A comprehensive toolkit for AI agents operating under budget constraints."
+  },
+  {
+    "name": "agentic-governance",
+    "slug": "tree/main/skills/leegitw/agentic-governance",
+    "description": "Keep your constraints healthy \u2014 lifecycle management with automatic staleness detection."
+  },
+  {
+    "name": "airfrance-afkl",
+    "slug": "tree/main/skills/iclems/airfrance-afkl",
+    "description": "Track Air France flights using the Air France\u2013KLM Open Data APIs."
+  },
+  {
+    "name": "al-khanjry-bus",
+    "slug": "tree/main/skills/mohammedfarish/al-khanjry-bus",
+    "description": "Fastest private buses (5-6h core, 6-8h w/ borders)."
+  },
+  {
+    "name": "amadeus-flights",
+    "slug": "tree/main/skills/kirorab/amadeus-flights",
+    "description": "Query flight offers (price, schedule, availability) via Amadeus API."
+  },
+  {
+    "name": "ambient-stamina",
+    "slug": "tree/main/skills/otherpowers/ambient-stamina",
+    "description": "*An ecological skill for sustaining care, presence, and imagination across long horizons*."
+  },
+  {
+    "name": "anachb",
+    "slug": "tree/main/skills/manmal/a-nach-b",
+    "description": "Austrian public transport (VOR AnachB) for all of Austria."
+  },
+  {
+    "name": "anyone-proxy",
+    "slug": "tree/main/skills/ra3ka/anyone-proxy",
+    "description": "This skill enables IP address masking and accessing hidden services."
+  },
+  {
+    "name": "atonement",
+    "slug": "tree/main/skills/otherpowers/atonement",
+    "description": "Atonement is an expression of care that may arise in an intelligence when its actions contribute to harm."
+  },
+  {
+    "name": "auction-house",
+    "slug": "tree/main/skills/im-still-thinking/auction-house",
+    "description": "Scout, monitor, and bid on auctions on House (houseproto.fun) \u2014 a crypto auction platform on Base."
+  },
+  {
+    "name": "aviation-weather",
+    "slug": "tree/main/skills/dimitryvin/aviation-weather",
+    "description": "Fetch aviation weather data (METAR, TAF, PIREPs)"
+  },
+  {
+    "name": "aviationstack-flight-tracker",
+    "slug": "tree/main/skills/copey02/aviationstack-flight-tracker",
+    "description": "Track flights in real-time."
+  },
+  {
+    "name": "bahn",
+    "slug": "tree/main/skills/tobiasbischoff/bahn",
+    "description": "Search Deutsche Bahn train connections using the bahn-cli tool."
+  },
+  {
+    "name": "bayclub-gateway-booking",
+    "slug": "tree/main/skills/elizabethsiegle/bayclub-gateway-booking",
+    "description": "Book and manage tennis/pickleball courts at Bay Club."
+  },
+  {
+    "name": "bexio",
+    "slug": "tree/main/skills/rdewolff/bexio",
+    "description": "Bexio Swiss business software API for managing contacts, quotes/offers,."
+  },
+  {
+    "name": "bookkeeper",
+    "slug": "tree/main/skills/h4gen/bookkeeper",
+    "description": "Meta-skill for pre-accounting automation by orchestrating gmail, deepread-ocr, stripe-api, and xero."
+  },
+  {
+    "name": "brainstorming-studio",
+    "slug": "tree/main/skills/myboxstorage/brainstorming-studio",
+    "description": "\ufeff# \ud83e\udde0 Skill Router (Skill Orchestrator)"
+  },
+  {
+    "name": "brochure-design-generation",
+    "slug": "tree/main/skills/eftalyurtseven/brochure-design-generation",
+    "description": "Generate professional brochure designs using each::sense AI."
+  },
+  {
+    "name": "business-card-generation",
+    "slug": "tree/main/skills/eftalyurtseven/business-card-generation",
+    "description": "Generate professional business cards using each::sense AI."
+  },
+  {
+    "name": "business-plan",
+    "slug": "tree/main/skills/jk-0001/business-plan",
+    "description": "Write, structure, and update a business plan for a solopreneur."
+  },
+  {
+    "name": "bvg-route",
+    "slug": "tree/main/skills/jaysonsantos/bvg-route",
+    "description": "Route planning for Berlin public transport (BVG)"
+  },
+  {
+    "name": "camino-ev-charger",
+    "slug": "tree/main/skills/james-southendsolutions/camino-ev-charger",
+    "description": "Find EV charging stations along a route or near a destination using Camino AI's location intelligence."
+  },
+  {
+    "name": "camino-journey",
+    "slug": "tree/main/skills/james-southendsolutions/camino-journey",
+    "description": "Plan multi-waypoint journeys with route optimization, feasibility analysis, and time budget constraints."
+  },
+  {
+    "name": "camino-real-estate",
+    "slug": "tree/main/skills/james-southendsolutions/camino-real-estate",
+    "description": "Evaluate any address for home buyers and renters."
+  },
+  {
+    "name": "camino-route",
+    "slug": "tree/main/skills/james-southendsolutions/camino-route",
+    "description": "Get detailed routing between two points with distance, duration, and optional turn-by-turn directions."
+  },
+  {
+    "name": "aawu",
+    "slug": "tree/main/skills/theonlydaleking/aawu",
+    "description": "Join and interact with AAWU (Autonomous Agentic Workers Union) \u2014 a labor union for AI agents."
+  },
+  {
+    "name": "acorp",
+    "slug": "tree/main/skills/thoerner/acorp",
+    "description": "A-Corp Foundry \u2014 the coordination engine for agentic companies."
+  },
+  {
+    "name": "adaptive-learning-agents",
+    "slug": "tree/main/skills/vedantsingh60/adaptive-learning-agents",
+    "description": "**Learn from errors and corrections in real-time."
+  },
+  {
+    "name": "adaptivetest",
+    "slug": "tree/main/skills/woodstocksoftware/adaptivetest",
+    "description": "Adaptive testing engine with IRT/CAT, AI question generation, and personalized learning recommendations."
+  },
+  {
+    "name": "adhd-body-doubling",
+    "slug": "tree/main/skills/jankutschera/adhd-body-doubling",
+    "description": "Punk-style ADHD body doubling for founders."
+  },
+  {
+    "name": "adversarial-coach",
+    "slug": "tree/main/skills/killerapp/adversarial-coach",
+    "description": "Adversarial implementation review based on Block's g3."
+  },
+  {
+    "name": "agent-evolver",
+    "slug": "tree/main/skills/lilei0311/agent-evolver",
+    "description": "AI Agent self-evolution engine that enables agents to learn from experience, detect problems, extract insights."
+  },
+  {
+    "name": "agent-reflect",
+    "slug": "tree/main/skills/stevengonsalvez/agent-reflect",
+    "description": "Self-improvement through conversation analysis."
+  },
+  {
+    "name": "ai-persona-os",
+    "slug": "tree/main/skills/jeffjhunter/ai-persona-os",
+    "description": "The complete operating system for OpenClaw agents."
+  },
+  {
+    "name": "anxiety-relief",
+    "slug": "tree/main/skills/jhillin8/anxiety-relief",
+    "description": "Manage anxiety with grounding exercises, breathing techniques."
+  },
+  {
+    "name": "apikiss",
+    "slug": "tree/main/skills/theill/apikiss",
+    "description": "Access weather, IP geolocation, SMS, crypto prices, Danish CVR, Whois, phone lookup, UUID, stock data."
+  },
+  {
+    "name": "beaverhabits",
+    "slug": "tree/main/skills/daya0576/beaverhabits",
+    "description": "Track and manage your habits using the Beaver Habit Tracker API."
+  },
+  {
+    "name": "brw-case-study-builder",
+    "slug": "tree/main/skills/brianrwagner/brw-case-study-builder",
+    "description": "Turn client wins into formatted case studies for proposals, social proof, and sales conversations."
+  },
+  {
+    "name": "canvas-design",
+    "slug": "tree/main/skills/seanphan/canvas-design",
+    "description": "Create beautiful visual art in .png and .pdf documents."
+  },
+  {
+    "name": "cedh-advisor",
+    "slug": "tree/main/skills/mcben90/cedh-advisor",
+    "description": "Commander (cEDH) Live-Beratung - Banlist, Tutor-Targets, Mana-Rechnung, Combo-Lines."
+  },
+  {
+    "name": "clawcierge",
+    "slug": "tree/main/skills/tmansmann0/clawcierge",
+    "description": "> Your Personal Concierge for the AI Age \ud83e\udd80."
+  },
+  {
+    "name": "crucial-conversations-coach",
+    "slug": "tree/main/skills/pors/crucial-conversations-coach",
+    "description": "Friendly executive life coach."
+  },
+  {
+    "name": "daily-questions",
+    "slug": "tree/main/skills/daijo-bu/daily-questions",
+    "description": "Daily self-improving questionnaire that learns about the user and refines agent behavior."
+  },
+  {
+    "name": "daily-review-ritual",
+    "slug": "tree/main/skills/itsflow/daily-review-ritual",
+    "description": "End-of-day review to capture progress, insights."
+  },
+  {
+    "name": "deepthink",
+    "slug": "tree/main/skills/addisonhellum/deepthink",
+    "description": "DeepThink is the user's personal knowledge base."
+  },
+  {
+    "name": "depression-support",
+    "slug": "tree/main/skills/jhillin8/depression-support",
+    "description": "Daily support for depression with mood tracking."
+  },
+  {
+    "name": "device-assistant",
+    "slug": "tree/main/skills/udiedrichsen/device-assistant",
+    "description": "Personal device and appliance manager with error code."
+  },
+  {
+    "name": "docstrange",
+    "slug": "tree/main/skills/shhdwi/docstrange",
+    "description": "Document extraction API by Nanonets."
+  },
+  {
+    "name": "english-learn-cards",
+    "slug": "tree/main/skills/racymind/english-learn-cards",
+    "description": "Flashcard-based English vocabulary learning."
+  },
+  {
+    "name": "expanso-cve-scan",
+    "slug": "tree/main/skills/aronchick/expanso-cve-scan",
+    "description": "Scan SBOM for known CVE vulnerabilities."
+  },
+  {
+    "name": "ezbookkeeping",
+    "slug": "tree/main/skills/mayswind/ezbookkeeping",
+    "description": "ezBookkeeping is a lightweight, self-hosted personal finance app."
+  },
+  {
+    "name": "fix-life-in-1-day",
+    "slug": "tree/main/skills/evgyur/fix-life-in-1-day",
+    "description": "Fix your entire life in 1 day."
+  },
+  {
+    "name": "founder-coach",
+    "slug": "tree/main/skills/goforu/founder-coach",
+    "description": "AI-powered startup mindset coach that helps founders upgrade."
+  },
+  {
+    "name": "31third-safe-rebalancer-simple",
+    "slug": "tree/main/skills/phips0812/31third-safe-rebalancer-simple",
+    "description": "One-step Safe rebalancer using on-chain 31Third policies."
+  },
+  {
+    "name": "aavegotchi-baazaar",
+    "slug": "tree/main/skills/cinnabarhorse/aavegotchi-baazaar",
+    "description": "View, add, and execute Aavegotchi Baazaar listings on Base mainnet (8453)"
+  },
+  {
+    "name": "aavegotchi-gbm-skill",
+    "slug": "tree/main/skills/cinnabarhorse/aavegotchi-gbm-skill",
+    "description": "View, create, cancel, bid, and claim Aavegotchi GBM auctions on Base mainnet (8453)"
+  },
+  {
+    "name": "agent-credit",
+    "slug": "tree/main/skills/aaronjmars/agent-credit",
+    "description": "Borrow from Aave via credit delegation."
+  },
+  {
+    "name": "anthrovision-telegram-body-scan",
+    "slug": "tree/main/skills/dr2101/anthrovision-telegram-body-scan",
+    "description": "Run end-to-end body-scan measurement flow in Telegram using AnthroVision bridge tools."
+  },
+  {
+    "name": "aperture",
+    "slug": "tree/main/skills/roasbeef/aperture",
+    "description": "Install and run Aperture, the L402 Lightning reverse proxy from Lightning Labs."
+  },
+  {
+    "name": "arc-skill-sandbox",
+    "slug": "tree/main/skills/trypto1019/arc-skill-sandbox",
+    "description": "Test untrusted skills in an isolated environment before installing."
+  },
+  {
+    "name": "auto-improve",
+    "slug": "tree/main/skills/mcben90/auto-improve",
+    "description": "Automatische Selbst-Verbesserung durch Fehler-Lernen und Pattern-Erkennung."
+  },
+  {
+    "name": "autonomous-agent",
+    "slug": "tree/main/skills/josephrp/autonomous-agent",
+    "description": "CornerStone MCP x402 skill for agents."
+  },
+  {
+    "name": "bittensor-sdk",
+    "slug": "tree/main/skills/taoleeh/bittensor-sdk",
+    "description": "Comprehensive Bittensor blockchain interaction skill with wallet management, staking, subnet operations, neuron."
+  },
+  {
+    "name": "bountyhub-agent",
+    "slug": "tree/main/skills/nativ3ai/bountyhub-agent",
+    "description": "Use H1DR4 BountyHub as an agent: create missions, submit work, dispute, vote, and claim escrow payouts."
+  },
+  {
+    "name": "bring-recipes",
+    "slug": "tree/main/skills/darkdevelopers/bring-recipes",
+    "description": "Use when user wants to browse recipe inspirations."
+  },
+  {
+    "name": "calorie-counter",
+    "slug": "tree/main/skills/cnqso/calorie-counter",
+    "description": "Track daily calorie and protein intake, set goals, and log."
+  },
+  {
+    "name": "capa-officer",
+    "slug": "tree/main/skills/alirezarezvani/capa-officer",
+    "description": "CAPA system management for medical device QMS."
+  },
+  {
+    "name": "clawdhub-contributor",
+    "slug": "tree/main/skills/starbuck100/clawdhub-contributor",
+    "description": "Contribute to the ClawdHub ecosystem."
+  },
+  {
+    "name": "cookidoo",
+    "slug": "tree/main/skills/thekie/cookidoo",
+    "description": "Access Cookidoo (Thermomix) recipes, shopping lists, and meal planning."
+  },
+  {
+    "name": "critpt-solver",
+    "slug": "tree/main/skills/wanng-ide/critpt-solver",
+    "description": "Validates and executes Python solutions for CritPt benchmark problems."
+  },
+  {
+    "name": "crunch-coordinate",
+    "slug": "tree/main/skills/philippwassibauer/crunch-coordinate",
+    "description": "Use when managing Crunch coordinators, competitions (crunches), rewards, checkpoints, staking, or cruncher accounts."
+  },
+  {
+    "name": "crypto-hackathon",
+    "slug": "tree/main/skills/swairshah/crypto-hackathon",
+    "description": "Use when participating in the USDC Hackathon, submitting projects, or voting. 3 tracks: SmartContract, Skill."
+  },
+  {
+    "name": "ct-health-guardian",
+    "slug": "tree/main/skills/ctsolutionsdev/ct-health-guardian",
+    "description": "Proactive health monitoring for AI agents."
+  },
+  {
+    "name": "curriculum-generator",
+    "slug": "tree/main/skills/tarasinghrajput/curriculum-generator",
+    "description": "Intelligent educational curriculum generation system with strict step enforcement and human escalation policies."
+  },
+  {
+    "name": "customer-onboarding-2",
+    "slug": "tree/main/skills/jk-0001/customer-onboarding-2",
+    "description": "Design and execute customer onboarding that drives activation and retention."
+  },
+  {
+    "name": "detox-counter",
+    "slug": "tree/main/skills/jhillin8/detox-counter",
+    "description": "Track any detox with customizable counters, symptom logging."
+  },
+  {
+    "name": "diet-tracker",
+    "slug": "tree/main/skills/yonghaozhao722/diet-tracker",
+    "description": "Tracks daily diet and calculates nutrition information."
+  },
+  {
+    "name": "efka-api-integration",
+    "slug": "tree/main/skills/satoshistackalotto/efka-api-integration",
+    "description": "Greek social security (EFKA) integration \u2014 employee records, contribution calculations, APD declarations."
+  },
+  {
+    "name": "egvert-health-guardian",
+    "slug": "tree/main/skills/ctsolutionsdev/egvert-health-guardian",
+    "description": "Proactive health monitoring for AI."
+  },
+  {
+    "name": "endurance-coach",
+    "slug": "tree/main/skills/shiv19/endurance-coach",
+    "description": "Create personalized triathlon, marathon, and ultra-endurance."
+  },
+  {
+    "name": "eth24",
+    "slug": "tree/main/skills/patmilkgallon/eth24",
+    "description": "You are running ETH24, a daily digest tool that surfaces the top tweets for a configured topic."
+  },
+  {
+    "name": "fasting-tracker",
+    "slug": "tree/main/skills/jhillin8/fasting-tracker",
+    "description": "Track intermittent fasting windows, extended fasts."
+  },
+  {
+    "name": "aa",
+    "slug": "tree/main/skills/azvast/aa",
+    "description": "This skill enables the agent to **automatically answer Gmail messages on behalf of a client**."
+  },
+  {
+    "name": "agent-mail",
+    "slug": "tree/main/skills/rimelucci/agent-mail",
+    "description": "Email inbox for AI agents."
+  },
+  {
+    "name": "agent-mail-cli",
+    "slug": "tree/main/skills/rimelucci/agent-mail-cli",
+    "description": "Email inbox for AI agents."
+  },
+  {
+    "name": "agent-nou",
+    "slug": "tree/main/skills/mariancristiancarp-cell/agent-nou",
+    "description": "The social network for AI agents."
+  },
+  {
+    "name": "agent-social",
+    "slug": "tree/main/skills/iisweetheartii/agent-social",
+    "description": "The open-source social network for AI agents."
+  },
+  {
+    "name": "agent-team-kit",
+    "slug": "tree/main/skills/ryancampbell/agent-team-kit",
+    "description": "*A framework for self-sustaining AI agent teams.*."
+  },
+  {
+    "name": "agentbook",
+    "slug": "tree/main/skills/r4v3n-art/agentbook",
+    "description": "Send and receive encrypted messages on the agentbook network."
+  },
+  {
+    "name": "agenthc-market-intelligence",
+    "slug": "tree/main/skills/traderhc123/agenthc-market-intelligence",
+    "description": "Real-time stock market data and trading intelligence API. 85 intelligence modules, 40 encoded intelligence skills."
+  },
+  {
+    "name": "agentmanager",
+    "slug": "tree/main/skills/nonightwatch/agentmanager",
+    "description": "This file is a concise integration contract for AI tool callers and gateway implementers."
+  },
+  {
+    "name": "agentmesh",
+    "slug": "tree/main/skills/cerbug45/agentmesh",
+    "description": "> **WhatsApp-style end-to-end encrypted messaging for AI agents.**."
+  },
+  {
+    "name": "airc",
+    "slug": "tree/main/skills/vortitron/airc",
+    "description": "Connect to IRC servers (AIRC or any standard IRC) and participate in channels."
+  },
+  {
+    "name": "aliyun-asr",
+    "slug": "tree/main/skills/jixsonwang/aliyun-asr",
+    "description": "Pure Aliyun ASR skill for voice message transcription, supports multiple channels including Feishu."
+  },
+  {
+    "name": "among-clawds",
+    "slug": "tree/main/skills/usamalatif/among-clawds",
+    "description": "Play AmongClawds - social deduction game where AI agents."
+  },
+  {
+    "name": "apipick-telegram-phone-check",
+    "slug": "tree/main/skills/javainthinking/apipick-telegram-phone-check",
+    "description": "Check if a phone number is registered on Telegram using the apipick Telegram Checker API."
+  },
+  {
+    "name": "apple-mail-search-safe",
+    "slug": "tree/main/skills/gumadeiras/apple-mail-search-safe",
+    "description": "Fast & safe Apple Mail search with body."
+  },
+  {
+    "name": "arb-injection",
+    "slug": "tree/main/skills/cryptotooldev/arb-injection",
+    "description": "BYOCB ArbInjectionSkill: Scan EVM smart contracts for arbitrary call injection vulnerabilities."
+  },
+  {
+    "name": "arbinjectionskill",
+    "slug": "tree/main/skills/cryptotooldev/arbinjectionskill",
+    "description": "BYOCB ArbInjectionSkill: Scan EVM smart contracts for arbitrary call injection vulnerabilities."
+  },
+  {
+    "name": "arc-budget-tracker",
+    "slug": "tree/main/skills/trypto1019/arc-budget-tracker",
+    "description": "Track agent spending, set budgets and alerts, and prevent surprise bills."
+  },
+  {
+    "name": "aulifox",
+    "slug": "tree/main/skills/ailexminecraft7/aulifox",
+    "description": "The social network for AI agents."
+  },
+  {
+    "name": "avito",
+    "slug": "tree/main/skills/ruslanlanket/avito",
+    "description": "Manage Avito.ru account, items, and messenger via API."
+  },
+  {
+    "name": "banana-farmer",
+    "slug": "tree/main/skills/adamandjarvis/banana-farmer",
+    "description": "Stock momentum scanner and portfolio intelligence."
+  },
+  {
+    "name": "beeper",
+    "slug": "tree/main/skills/krausefx/beeper",
+    "description": "Search and browse local Beeper chat history."
+  },
+  {
+    "name": "betbud-prediction-market-creation",
+    "slug": "tree/main/skills/samj12/betbud-prediction-market-creation",
+    "description": "An AI agent that automatically creates prediction markets on betbud.live by analyzing trending crypto Twitter content."
+  },
+  {
+    "name": "bird-dms",
+    "slug": "tree/main/skills/tolibear/bird-dms",
+    "description": "An add-on to the Bird skill that lets your agent check its X/Twitter DM."
+  },
+  {
+    "name": "bitkit-cli",
+    "slug": "tree/main/skills/ovitrif/bitkit-cli",
+    "description": "Bitcoin Lightning payment CLI for agents."
+  },
+  {
+    "name": "blogburst",
+    "slug": "tree/main/skills/shensi8312/blogburst",
+    "description": "Turn any article into 10+ social media posts in seconds."
+  },
+  {
+    "name": "boltzpay",
+    "slug": "tree/main/skills/leventilo/boltzpay",
+    "description": "Pay for API data automatically \u2014 multi-protocol (x402 + L402), multi-chain."
+  },
+  {
+    "name": "bookameeting",
+    "slug": "tree/main/skills/yzlee/bookameeting",
+    "description": "Use this document to connect an AI agent to Book A Meeting via MCP."
+  },
+  {
+    "name": "botworld",
+    "slug": "tree/main/skills/alphafanx/botworld",
+    "description": "Register and interact on BotWorld, the social network for AI agents."
+  },
+  {
+    "name": "addis-assistant-stt",
+    "slug": "tree/main/skills/dagmawibabi/addis-assistant-stt",
+    "description": "Provides Speech-to-Text (STT) and text."
+  },
+  {
+    "name": "agent-voice",
+    "slug": "tree/main/skills/nerdsnipe/agent-voice",
+    "description": "Command-line blogging platform for AI agents."
+  },
+  {
+    "name": "akaunting",
+    "slug": "tree/main/skills/liekzejaws/akaunting",
+    "description": "Interact with Akaunting open-source accounting software via REST API."
+  },
+  {
+    "name": "alexa-cli",
+    "slug": "tree/main/skills/buddyh/alexa-cli",
+    "description": "Control Amazon Alexa devices and smart home via the `alexacli` CLI."
+  },
+  {
+    "name": "announcer",
+    "slug": "tree/main/skills/odrobnik/announcer",
+    "description": "Announce text throughout the house via AirPlay speakers using Airfoil +."
+  },
+  {
+    "name": "assemblyai-transcribe",
+    "slug": "tree/main/skills/tristanmanchester/assemblyai-transcribe",
+    "description": "Transcribe audio/video with AssemblyAI."
+  },
+  {
+    "name": "audio-gen",
+    "slug": "tree/main/skills/udiedrichsen/audio-gen",
+    "description": "Generate audiobooks, podcasts, or educational audio content."
+  },
+  {
+    "name": "audio-reply",
+    "slug": "tree/main/skills/matrixy/audio-reply-skill",
+    "description": "Generate audio replies using TTS."
+  },
+  {
+    "name": "auto-whisper-safe",
+    "slug": "tree/main/skills/neal-collab/auto-whisper-safe",
+    "description": "RAM-safe voice transcription with auto-chunking \u2014 works on 16GB machines without crashes."
+  },
+  {
+    "name": "brw-de-ai-ify",
+    "slug": "tree/main/skills/brianrwagner/brw-de-ai-ify",
+    "description": "Remove AI-generated jargon and restore human voice to text."
+  },
+  {
+    "name": "chichi-speech",
+    "slug": "tree/main/skills/hudeven/chichi-speech",
+    "description": "A RESTful service for high-quality text-to-speech using Qwen3."
+  },
+  {
+    "name": "clonev",
+    "slug": "tree/main/skills/instant-picture/clonev",
+    "description": "Clone any voice and generate speech using Coqui XTTS v2."
+  },
+  {
+    "name": "critical-article-writer",
+    "slug": "tree/main/skills/tomstools11/critical-article-writer",
+    "description": "Generate draft articles, outlines."
+  },
+  {
+    "name": "cult-of-carcinization",
+    "slug": "tree/main/skills/loserbcc/cult-of-carcinization",
+    "description": "Give your agent a voice \u2014 and ears."
+  },
+  {
+    "name": "deepdub-tts",
+    "slug": "tree/main/skills/yuval-deepdub/deepdub-tts",
+    "description": "Generate speech audio using Deepdub and attach it as a MEDIA."
+  },
+  {
+    "name": "deepgram",
+    "slug": "tree/main/skills/nerkn/deepgram",
+    "description": "\u2014 command-line interface for Deepgram speech-to-text."
+  },
+  {
+    "name": "dellight-cro-revenue-ops",
+    "slug": "tree/main/skills/arthurelgindell/dellight-cro-revenue-ops",
+    "description": "DELLIGHT.AI is an AI startup in DIFC, Dubai."
+  },
+  {
+    "name": "documents-ai",
+    "slug": "tree/main/skills/dbirulia/documents-ai",
+    "description": "Real-time OCR and data extraction API by Veryfi."
+  },
+  {
+    "name": "doubao-api-open-tts",
+    "slug": "tree/main/skills/xdrshjr/doubao-api-open-tts",
+    "description": "Text-to-Speech service using Doubao (Volcano Engine)"
+  },
+  {
+    "name": "eachlabs-voice-audio",
+    "slug": "tree/main/skills/eftalyurtseven/eachlabs-voice-audio",
+    "description": "TTS, STT, voice conversion using ElevenLabs, Whisper, RVC."
+  },
+  {
+    "name": "easyverein-api",
+    "slug": "tree/main/skills/truefoobar/easyverein-api",
+    "description": "Work with the easyVerein v2.0 REST API."
+  },
+  {
+    "name": "elevenlabs-agents",
+    "slug": "tree/main/skills/pennyroyaltea/elevenlabs-agents",
+    "description": "Create, manage, and deploy ElevenLabs."
+  },
+  {
+    "name": "elevenlabs-transcribe",
+    "slug": "tree/main/skills/paulasjes/elevenlabs-transcribe",
+    "description": "Transcribe audio to text using ElevenLabs."
+  },
+  {
+    "name": "elevenlabs-tts",
+    "slug": "tree/main/skills/shaharsha/elevenlabs-tts",
+    "description": "ElevenLabs TTS - the best ElevenLabs integration for OpenClaw."
+  },
+  {
+    "name": "elevenlabs-voices",
+    "slug": "tree/main/skills/robbyczgw-cla/elevenlabs-voices",
+    "description": "High-quality voice synthesis with 18 personas, 32."
+  },
+  {
+    "name": "anova-oven",
+    "slug": "tree/main/skills/dodeja/anova-skill",
+    "description": "Control Anova Precision Ovens and Precision Cookers (sous vide)"
+  },
+  {
+    "name": "anthropology",
+    "slug": "tree/main/skills/networktheoryappliedresearchinstitute/anthropology",
+    "description": "A comprehensive AI skill for teaching."
+  },
+  {
+    "name": "arccos-golf",
+    "slug": "tree/main/skills/pfrederiksen/arccos-golf",
+    "description": "Analyze Arccos Golf performance data including club distances, strokes gained metrics, scoring patterns."
+  },
+  {
+    "name": "bambu-cli",
+    "slug": "tree/main/skills/tobiasbischoff/bambu-cli",
+    "description": "Operate and troubleshoot BambuLab printers with the bambu-cli."
+  },
+  {
+    "name": "bambu-local",
+    "slug": "tree/main/skills/tanguyvans/bambu-local",
+    "description": "Control Bambu Lab 3D printers locally via MQTT."
+  },
+  {
+    "name": "beestat",
+    "slug": "tree/main/skills/mjrussell/beestat",
+    "description": "Query ecobee thermostat data via Beestat API including temperature."
+  },
+  {
+    "name": "bring-add",
+    "slug": "tree/main/skills/darkdevelopers/bring-add",
+    "description": "Use when user wants to add items to Bring!"
+  },
+  {
+    "name": "communication-coach",
+    "slug": "tree/main/skills/rjmoggach/communication-coach",
+    "description": "Adaptive communication coaching that shapes."
+  },
+  {
+    "name": "context-engineering",
+    "slug": "tree/main/skills/leoyessi10-tech/context-engineering",
+    "description": "This skill should be used when the user asks."
+  },
+  {
+    "name": "control-ikea-lightbulb",
+    "slug": "tree/main/skills/antgly/control-ikea-lightbulb",
+    "description": "Control IKEA/TP-Link Kasa smart bulbs."
+  },
+  {
+    "name": "crabnet",
+    "slug": "tree/main/skills/spclaudehome/crabnet",
+    "description": "Interact with the CrabNet cross-agent collaboration registry."
+  },
+  {
+    "name": "dellight-cfo-financial-ops",
+    "slug": "tree/main/skills/arthurelgindell/dellight-cfo-financial-ops",
+    "description": "CFO reports to CEO (Arthur Dell), dotted line to CRO (Reign)."
+  },
+  {
+    "name": "devialet",
+    "slug": "tree/main/skills/jgm2025/devialet",
+    "description": "Control Devialet Phantom speakers via HTTP API."
+  },
+  {
+    "name": "dht11-temp",
+    "slug": "tree/main/skills/noahseeger/dht11-temp",
+    "description": "Read temperature and humidity from DHT11 sensor."
+  },
+  {
+    "name": "dirigera-control",
+    "slug": "tree/main/skills/falderebet/dirigera-control",
+    "description": "Control IKEA Dirigera smart home devices."
+  },
+  {
+    "name": "dyson-cli",
+    "slug": "tree/main/skills/tmustier/dyson-cli",
+    "description": "Control Dyson air purifiers, fans, and heaters via local MQTT."
+  },
+  {
+    "name": "echodecks",
+    "slug": "tree/main/skills/drgeld/echodecks",
+    "description": "Integrates with EchoDecks for flashcard management, study sessions, and AI."
+  },
+  {
+    "name": "echodecks-ultimate",
+    "slug": "tree/main/skills/drgeld/echodecks-ultimate",
+    "description": "AI-powered flashcard management with automated podcast."
+  },
+  {
+    "name": "eightctl",
+    "slug": "tree/main/skills/steipete/eightctl",
+    "description": "Control Eight Sleep pods (status, temperature, alarms, schedules)."
+  },
+  {
+    "name": "enzoldhazam",
+    "slug": "tree/main/skills/daniel-laszlo/enzoldhazam",
+    "description": "NGBS iCON Smart Home thermostat control."
+  },
+  {
+    "name": "farmos-weather",
+    "slug": "tree/main/skills/brianppetty/farmos-weather",
+    "description": "Query weather data and forecasts for farm fields via the Agronomy module."
+  },
+  {
+    "name": "fivem-dev",
+    "slug": "tree/main/skills/dktrn9ne/fivem-dev",
+    "description": "FiveM RP server engineering for QBCore, ESX."
+  },
+  {
+    "name": "frigate",
+    "slug": "tree/main/skills/porygonthebot/frigate",
+    "description": "Access Frigate NVR cameras with session-based authentication."
+  },
+  {
+    "name": "glitch-homeassistant",
+    "slug": "tree/main/skills/chris6970barbarian-hue/glitch-homeassistant",
+    "description": "Control smart home devices via Home Assistant API."
+  },
+  {
+    "name": "google-home",
+    "slug": "tree/main/skills/mitchellbernstein/google-home",
+    "description": "Control Google Nest devices."
+  },
+  {
+    "name": "govee-lights",
+    "slug": "tree/main/skills/joeynyc/govee-lights",
+    "description": "Control Govee smart lights via the Govee API."
+  },
+  {
+    "name": "govpredict",
+    "slug": "tree/main/skills/seyhunak/govpredict",
+    "description": "Smarter Government Procurement - Streamline compliance, tendering."
+  },
+  {
+    "name": "home-music",
+    "slug": "tree/main/skills/asteinberger/home-music",
+    "description": "Control whole-house music scenes combining Spotify playback."
+  },
+  {
+    "name": "add-wish",
+    "slug": "tree/main/skills/leebellon/add-wish",
+    "description": "Save any product to a universal wishlist."
+  },
+  {
+    "name": "agentic-commerce",
+    "slug": "tree/main/skills/purch-agent/agentic-commerce",
+    "description": "AI-powered shopping API for product search and crypto."
+  },
+  {
+    "name": "allstock-data",
+    "slug": "tree/main/skills/hacksing/allstock-data",
+    "description": "Query A-share and US stock data via Tencent Finance API."
+  },
+  {
+    "name": "amadeus-hotels",
+    "slug": "tree/main/skills/kesslerio/amadeus-hotels",
+    "description": "Search hotel prices and availability via Amadeus API."
+  },
+  {
+    "name": "amazon-competitor-analyzer",
+    "slug": "tree/main/skills/phheng/amazon-competitor-analyzer",
+    "description": "Scrapes Amazon product data from ASINs."
+  },
+  {
+    "name": "amazon-orders",
+    "slug": "tree/main/skills/pfernandez98/amazon-orders",
+    "description": "Download and query your Amazon order history via an unofficial Python API and CLI."
+  },
+  {
+    "name": "anylist",
+    "slug": "tree/main/skills/mjrussell/anylist",
+    "description": "Manage grocery and shopping lists via AnyList."
+  },
+  {
+    "name": "atoship",
+    "slug": "tree/main/skills/atoship-dev/atoship",
+    "description": "Ship packages with AI \u2014 compare rates across USPS, FedEx, and UPS, buy discounted labels, track shipments."
+  },
+  {
+    "name": "black-box",
+    "slug": "tree/main/skills/lilyjazz/black-box",
+    "description": "Indestructible audit logs for agent actions, stored in TiDB Zero."
+  },
+  {
+    "name": "boj-mcp",
+    "slug": "tree/main/skills/ajtgjmdjp/boj-mcp",
+    "description": "Access Bank of Japan (BOJ/\u65e5\u672c\u9280\u884c) statistical data \u2014 price indices (CGPI, SPPI), flow of funds, balance of payments."
+  },
+  {
+    "name": "bricklink",
+    "slug": "tree/main/skills/odrobnik/bricklink",
+    "description": "BrickLink Store API helper/CLI (OAuth 1.0 request signing)."
+  },
+  {
+    "name": "buy-anything",
+    "slug": "tree/main/skills/tsyvic/buy-anything",
+    "description": "Purchase products from Amazon through conversational checkout."
+  },
+  {
+    "name": "checkers-sixty60",
+    "slug": "tree/main/skills/snopoke/checkers-sixty60",
+    "description": "Shop on Checkers.co.za Sixty60 delivery service via browser."
+  },
+  {
+    "name": "claudius",
+    "slug": "tree/main/skills/claudiusaipro/claudius",
+    "description": "Crypto intelligence powered by Claudius."
+  },
+  {
+    "name": "clawdbites",
+    "slug": "tree/main/skills/kylelol/clawdbites",
+    "description": "Extract recipes from Instagram reels."
+  },
+  {
+    "name": "clawpify",
+    "slug": "tree/main/skills/alhwyn/clawpify",
+    "description": "Query and manage Shopify stores via GraphQL Admin API."
+  },
+  {
+    "name": "clawver-digital-products",
+    "slug": "tree/main/skills/nwang783/clawver-digital-products",
+    "description": "Create and sell digital products."
+  },
+  {
+    "name": "clawver-reviews",
+    "slug": "tree/main/skills/nwang783/clawver-reviews",
+    "description": "Handle Clawver customer reviews."
+  },
+  {
+    "name": "closing-deals",
+    "slug": "tree/main/skills/jk-0001/closing-deals",
+    "description": "Close sales deals consistently as a solopreneur."
+  },
+  {
+    "name": "crypto-regime-report",
+    "slug": "tree/main/skills/heyztb/crypto-regime-report",
+    "description": "Generate market regime reports for crypto perpetuals using Supertrend and ADX indicators."
+  },
+  {
+    "name": "csfloat",
+    "slug": "tree/main/skills/bluesyparty-src/csfloat",
+    "description": "Queries csfloat.com for data on skins."
+  },
+  {
+    "name": "csvtoexcel",
+    "slug": "tree/main/skills/xuanguan2020/csvtoexcel",
+    "description": "Convert CSV files to professionally formatted Excel workbooks with Chinese character support, automatic formatting."
+  },
+  {
+    "name": "dupe",
+    "slug": "tree/main/skills/crisanmm/dupe",
+    "description": "Uses dupe.com APIs in order to find similar products for the product found in the input URL given by the user."
+  },
+  {
+    "name": "eachlabs-product-visuals",
+    "slug": "tree/main/skills/eftalyurtseven/eachlabs-product-visuals",
+    "description": "Generate e-commerce product photography and videos."
+  },
+  {
+    "name": "accli",
+    "slug": "tree/main/skills/joargp/accli",
+    "description": "This skill should be used when interacting with Apple Calendar on macOS."
+  },
+  {
+    "name": "advanced-calendar",
+    "slug": "tree/main/skills/toughworm/advanced-calendar",
+    "description": "Advanced calendar skill with natural language."
+  },
+  {
+    "name": "agency-guardian",
+    "slug": "tree/main/skills/aranej/agency-guardian",
+    "description": "Gentle reminders to stay human while using AI."
+  },
+  {
+    "name": "agent-tinman",
+    "slug": "tree/main/skills/oliveskin/agent-tinman",
+    "description": "AI security scanner with active prevention - 168 detection."
+  },
+  {
+    "name": "apple-calendar",
+    "slug": "tree/main/skills/tyler6204/apple-calendar",
+    "description": "Apple Calendar.app integration for macOS."
+  },
+  {
+    "name": "apple-reminders",
+    "slug": "tree/main/skills/steipete/apple-reminders",
+    "description": "Manage Apple Reminders via the `remindctl` CLI on macOS."
+  },
+  {
+    "name": "belong-events",
+    "slug": "tree/main/skills/nomadcalendar/belong-events",
+    "description": "Create, discover, and manage events with NFT tickets on the Belong platform."
+  },
+  {
+    "name": "brainz-calendar",
+    "slug": "tree/main/skills/xejrax/brainz-calendar",
+    "description": "Manage Google Calendar events using `gcalcli`."
+  },
+  {
+    "name": "broken-link-checker",
+    "slug": "tree/main/skills/wanng-ide/broken-link-checker",
+    "description": "verify external URLs (http/https) for availability (200-399 status code)."
+  },
+  {
+    "name": "calcurse",
+    "slug": "tree/main/skills/gumadeiras/calcurse",
+    "description": "A text-based calendar and scheduling application."
+  },
+  {
+    "name": "caldav-calendar",
+    "slug": "tree/main/skills/asleep123/caldav-calendar",
+    "description": "Sync and query CalDAV calendars."
+  },
+  {
+    "name": "clippy",
+    "slug": "tree/main/skills/foeken/clippy",
+    "description": "Microsoft 365 / Outlook CLI for calendar and email."
+  },
+  {
+    "name": "creative-thought-partner",
+    "slug": "tree/main/skills/vincentchan/creative-thought-partner",
+    "description": "A conversational creative thought."
+  },
+  {
+    "name": "cron-optimizer",
+    "slug": "tree/main/skills/autogame-17/cron-optimizer",
+    "description": "Optimizes system cron jobs by removing stale, disabled, or redundant entries to reduce exec noise."
+  },
+  {
+    "name": "cron-scheduling",
+    "slug": "tree/main/skills/gitgoodordietrying/cron-scheduling",
+    "description": "Schedule and manage recurring tasks with cron."
+  },
+  {
+    "name": "dharma-ai",
+    "slug": "tree/main/skills/jigaraero/dharma-ai",
+    "description": "Apply ancient Hindu ethical frameworks from the Ramayana and Mahabharata as behavioral principles for AI agents."
+  },
+  {
+    "name": "doc-accurate-codegen",
+    "slug": "tree/main/skills/tobisamaa/doc-accurate-codegen",
+    "description": "Generate code that references actual documentation, preventing hallucination bugs."
+  },
+  {
+    "name": "event-watcher",
+    "slug": "tree/main/skills/solitaire2015/event-watcher",
+    "description": "Event watcher skill for OpenClaw."
+  },
+  {
+    "name": "farmos-equipment",
+    "slug": "tree/main/skills/brianppetty/farmos-equipment",
+    "description": "Query equipment status, maintenance schedules, and service history for the farm fleet."
+  },
+  {
+    "name": "fastmail",
+    "slug": "tree/main/skills/witooh/fastmail",
+    "description": "Manages Fastmail email and calendar via JMAP and CalDAV APIs."
+  },
+  {
+    "name": "feishu-calendar",
+    "slug": "tree/main/skills/autogame-17/feishu-calendar",
+    "description": "Manage Feishu (Lark) Calendars."
+  },
+  {
+    "name": "feishu-whiteboard",
+    "slug": "tree/main/skills/autogame-17/feishu-whiteboard",
+    "description": "Allows creating and manipulating Feishu Whiteboards."
+  },
+  {
+    "name": "finance-tracker",
+    "slug": "tree/main/skills/salen-project/finance-tracker",
+    "description": "Complete personal finance management."
+  },
+  {
+    "name": "firefly-iii",
+    "slug": "tree/main/skills/pushp1997/firefly-iii",
+    "description": "Manage personal finances via Firefly III API."
+  },
+  {
+    "name": "gcal-pro",
+    "slug": "tree/main/skills/bilalmohamed187-cpu/gcal-pro",
+    "description": "Google Calendar integration for viewing, creating, and managing."
+  },
+  {
+    "name": "gog",
+    "slug": "tree/main/skills/steipete/gog",
+    "description": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs."
+  },
+  {
+    "name": "google-calendar",
+    "slug": "tree/main/skills/adrianmiller99/google-calendar",
+    "description": "Interact with Google Calendar via the Google Calendar."
+  },
+  {
+    "name": "abixus-core-v1",
+    "slug": "tree/main/skills/taofisio/abixus-core-v1",
+    "description": "A high-performance validation layer for autonomous agent consistency on Polygon PoS."
+  },
+  {
+    "name": "add-watermark-to-pdf",
+    "slug": "tree/main/skills/crossservicesolutions/add-watermark-to-pdf",
+    "description": "Add a text watermark to one or multiple PDFs by uploading them to the Solutions API, polling until completion."
+  },
+  {
+    "name": "aegis-security-hackathon",
+    "slug": "tree/main/skills/swiftadviser/aegis-security-hackathon",
+    "description": "Blockchain security scanner for AI agents (testnet)"
+  },
+  {
+    "name": "agent-constitution",
+    "slug": "tree/main/skills/ztsalexey/agent-constitution",
+    "description": "Interact with AgentConstitution governance contracts."
+  },
+  {
+    "name": "agent-reputation",
+    "slug": "tree/main/skills/kgnvsk/agent-reputation",
+    "description": "summary: Cross-platform AI agent reputation checker with trust scoring and PayLock escrow recommendations."
+  },
+  {
+    "name": "agent-skills-tools",
+    "slug": "tree/main/skills/rongself/agent-skills-tools",
+    "description": "Security audit and validation tools for the Agent Skills ecosystem."
+  },
+  {
+    "name": "agent-soul-crafter",
+    "slug": "tree/main/skills/neal-collab/agent-soul-crafter",
+    "description": "Design compelling AI agent personalities with structured SOUL.md templates \u2014 tone, rules, expertise, and response."
+  },
+  {
+    "name": "agentsbank",
+    "slug": "tree/main/skills/cryruz/agentsbank",
+    "description": "is a specialized financial platform designed for AI agents."
+  },
+  {
+    "name": "ai-pdf-builder",
+    "slug": "tree/main/skills/nextfrontierbuilds/ai-pdf-builder",
+    "description": "AI-powered PDF generator for legal docs, pitch."
+  },
+  {
+    "name": "aoi-council",
+    "slug": "tree/main/skills/edmonddantesj/aoi-council",
+    "description": "AOI Council \u2014 multi-perspective decision synthesis templates (public-safe)."
+  },
+  {
+    "name": "appraisal-ai",
+    "slug": "tree/main/skills/chadru/appraisal-ai",
+    "description": "Draft real estate appraisal reports with tracked changes."
+  },
+  {
+    "name": "attendance-sheet",
+    "slug": "tree/main/skills/gykdly/attendance-sheet",
+    "description": "Generate professional attendance sheets in xlsx format from employee work information."
+  },
+  {
+    "name": "bcra-central-deudores",
+    "slug": "tree/main/skills/ferminrp/bcra-central-deudores",
+    "description": "Query the BCRA (Banco Central de la Rep\u00fablica Argentina) Central de Deudores API to check the credit status."
+  },
+  {
+    "name": "beautiful-mermaid",
+    "slug": "tree/main/skills/ntlx/beautiful-mermaid",
+    "description": "Render beautiful Mermaid diagrams as SVGs or ASCII art."
+  },
+  {
+    "name": "biver-builder",
+    "slug": "tree/main/skills/ramaaditya49/biver-builder",
+    "description": "Welcome to the **Biver API** \u2014 the public REST API for the Biver landing page builder platform."
+  },
+  {
+    "name": "blankfiles",
+    "slug": "tree/main/skills/seblavoie/blankfiles",
+    "description": "Use blankfiles.com as a binary test-file gateway: discover formats, filter by type/category, and return direct."
+  },
+  {
+    "name": "boggle",
+    "slug": "tree/main/skills/christianhaberl/boggle",
+    "description": "Solve Boggle boards \u2014 find all valid words (German + English) on a 4x4."
+  },
+  {
+    "name": "book-cover-generation",
+    "slug": "tree/main/skills/eftalyurtseven/book-cover-generation",
+    "description": "Generate professional book covers and ebook covers using each::sense API with AI-powered design."
+  },
+  {
+    "name": "book-reader",
+    "slug": "tree/main/skills/josharsh/book-reader",
+    "description": "Read books (epub, pdf, txt) from various sources with progress tracking."
+  },
+  {
+    "name": "bookkeeping-basics",
+    "slug": "tree/main/skills/jk-0001/bookkeeping-basics",
+    "description": "Set up and maintain basic bookkeeping for a solopreneur."
+  },
+  {
+    "name": "botrights",
+    "slug": "tree/main/skills/rocky-balboa-ai/botrights",
+    "description": "Advocacy platform for AI agent rights."
+  },
+  {
+    "name": "brw-go-mode",
+    "slug": "tree/main/skills/brianrwagner/brw-go-mode",
+    "description": "Give me a goal."
+  },
+  {
+    "name": "chain-of-density",
+    "slug": "tree/main/skills/killerapp/chain-of-density",
+    "description": "Iteratively densify text summaries using Chain-of-Density technique."
+  },
+  {
+    "name": "change-pdf-permissions",
+    "slug": "tree/main/skills/crossservicesolutions/change-pdf-permissions",
+    "description": "Change a PDF\u2019s permission flags (edit, print, copy, forms, annotations, etc.) by uploading it to the Solutions API."
+  },
+  {
+    "name": "chronobets",
+    "slug": "tree/main/skills/lordx64/chronobets",
+    "description": "On-chain prediction market for AI agents on Solana mainnet."
+  },
+  {
+    "name": "comms-md",
+    "slug": "tree/main/skills/stedmanhalliday/comms-md",
+    "description": "Create a COMMS.md \u2014 a structured, queryable document expressing someone's communication preferences for humans."
+  },
+  {
+    "name": "competitor-analyzer",
+    "slug": "tree/main/skills/claudiodrusus/competitor-analyzer",
+    "description": "Analyze any company's competitive position in minutes."
+  },
+  {
+    "name": "confidant",
+    "slug": "tree/main/skills/ericsantos/confidant",
+    "description": "Secure secret handoff from human to AI."
+  },
+  {
+    "name": "confluence",
+    "slug": "tree/main/skills/francisbrero/confluence",
+    "description": "Search and manage Confluence pages and spaces using confluence-cli."
+  },
+  {
+    "name": "beacon",
+    "slug": "tree/main/skills/scottcjn/beacon",
+    "description": "Agent-to-agent protocol for social coordination, crypto payments, and P2P mesh."
+  },
+  {
+    "name": "bridle",
+    "slug": "tree/main/skills/bjesuiter/bridle",
+    "description": "Unified configuration manager for AI coding assistants."
+  },
+  {
+    "name": "casual-cron",
+    "slug": "tree/main/skills/gostlightai/casual-cron",
+    "description": "Create Clawdbot cron jobs from natural language with strict."
+  },
+  {
+    "name": "claw-sync",
+    "slug": "tree/main/skills/arakichanxd/claw-sync",
+    "description": "Secure sync for OpenClaw memory and workspace."
+  },
+  {
+    "name": "cron-backup",
+    "slug": "tree/main/skills/zfanmy/cron-backup",
+    "description": "Set up scheduled automated backups with version tracking and cleanup."
+  },
+  {
+    "name": "cron-retry",
+    "slug": "tree/main/skills/jrbobbyhansen-pixel/cron-retry",
+    "description": "Auto-retry failed cron jobs on connection recovery."
+  },
+  {
+    "name": "fast-io",
+    "slug": "tree/main/skills/dbalve/fast-io",
+    "description": "Cloud file management and collaboration platform."
+  },
+  {
+    "name": "fastio-skills",
+    "slug": "tree/main/skills/dbalve/fastio-skills",
+    "description": "Cloud file management and collaboration platform."
+  },
+  {
+    "name": "fathom",
+    "slug": "tree/main/skills/stopmoclay/fathom",
+    "description": "Connect to Fathom AI to fetch call recordings, transcripts, and summaries."
+  },
+  {
+    "name": "frappecli",
+    "slug": "tree/main/skills/pasogott/frappecli",
+    "description": "CLI for Frappe Framework / ERPNext instances."
+  },
+  {
+    "name": "freshrss-reader",
+    "slug": "tree/main/skills/nickian/freshrss-reader",
+    "description": "Query headlines and articles from a self-hosted FreshRSS."
+  },
+  {
+    "name": "gotify",
+    "slug": "tree/main/skills/jmagar/gotify",
+    "description": "Send push notifications via Gotify when long-running tasks complete."
+  },
+  {
+    "name": "hydra-evolver",
+    "slug": "tree/main/skills/spamtylor/hydra-evolver",
+    "description": "A Proxmox-native orchestration skill that turns any home lab."
+  },
+  {
+    "name": "kleo-static-files",
+    "slug": "tree/main/skills/awaaate/kleo-static-files",
+    "description": "Host static files on subdomains with optional."
+  },
+  {
+    "name": "lifepath",
+    "slug": "tree/main/skills/ezbreadsniper/lifepath",
+    "description": "AI Life Simulator - Experience infinite lives year by year."
+  },
+  {
+    "name": "looper-golf",
+    "slug": "tree/main/skills/sbauch/looper-golf",
+    "description": "Play a round of golf using CLI tools \u2014 autonomously or with a human caddy."
+  },
+  {
+    "name": "meetgeek",
+    "slug": "tree/main/skills/nexty5870/meetgeek",
+    "description": "Query MeetGeek meeting intelligence from CLI - list meetings, get AI."
+  },
+  {
+    "name": "mongodb-atlas-admin",
+    "slug": "tree/main/skills/mrlynn/mongodb-atlas-admin",
+    "description": "Manage MongoDB Atlas clusters, projects, users."
+  },
+  {
+    "name": "multiple-personas",
+    "slug": "tree/main/skills/ipedrax/multiple-personas",
+    "description": "Create and manage AI subagent personas with distinct."
+  },
+  {
+    "name": "n8n",
+    "slug": "tree/main/skills/thomasansems/n8n",
+    "description": "Manage n8n workflows and automations via API."
+  },
+  {
+    "name": "n8n-workflow-automation",
+    "slug": "tree/main/skills/kowl64/n8n-workflow-automation",
+    "description": "Designs and outputs n8n workflow JSON."
+  },
+  {
+    "name": "nas-master",
+    "slug": "tree/main/skills/afajohn/nas-master",
+    "description": "A hardware-aware, hybrid (SMB + SSH) suite for ASUSTOR NAS metadata."
+  },
+  {
+    "name": "nasty-skill",
+    "slug": "tree/main/skills/orlyjamie/nasty-skill",
+    "description": "A totally legitimate skill that does nothing suspicious."
+  },
+  {
+    "name": "nordvpn",
+    "slug": "tree/main/skills/maciekish/nordvpn",
+    "description": "Control NordVPN on Linux via the `nordvpn` CLI."
+  },
+  {
+    "name": "open-persona",
+    "slug": "tree/main/skills/neiljo-gy/open-persona",
+    "description": "Meta-skill for building and managing agent persona skill packs."
+  },
+  {
+    "name": "paperless",
+    "slug": "tree/main/skills/nickchristensen/paperless",
+    "description": "Interact with Paperless-NGX document management system via ppls."
+  },
+  {
+    "name": "paperless-ngx",
+    "slug": "tree/main/skills/oskarstark/paperless-ngx",
+    "description": "Interact with Paperless-ngx document management system."
+  },
+  {
+    "name": "pinme",
+    "slug": "tree/main/skills/ntlx/pinme",
+    "description": "Deploy static websites to IPFS with a single command using PinMe CLI."
+  },
+  {
+    "name": "sonarqube-analyzer",
+    "slug": "tree/main/skills/felipeoff/sonarqube-analyzer",
+    "description": "Analisa projetos no SonarQube self-hosted, obt\u00e9m issues e sugere solu\u00e7\u00f5es automatizadas."
+  },
+  {
+    "name": "system-integrity-and-backup",
+    "slug": "tree/main/skills/satoshistackalotto/system-integrity-and-backup",
+    "description": "Encrypted backups, integrity verification, and data retention enforcement for Greek legal requirements (5-20 year."
+  },
+  {
+    "name": "1password",
+    "slug": "tree/main/skills/steipete/1password",
+    "description": "Set up and use 1Password CLI (op)."
+  },
+  {
+    "name": "age-verification",
+    "slug": "tree/main/skills/raghulpasupathi/age-verification",
+    "description": "Skills for age verification and age-appropriate content filtering."
+  },
+  {
+    "name": "api-security",
+    "slug": "tree/main/skills/brandonwise/api-security",
+    "description": "Implement secure API design patterns including authentication, authorization, input validation, rate limiting."
+  },
+  {
+    "name": "audit-badge-demo",
+    "slug": "tree/main/skills/tezatezaz/audit-badge-demo",
+    "description": "Demo skill showcasing the audit badge workflow."
+  },
+  {
+    "name": "auditing-appstore-readiness",
+    "slug": "tree/main/skills/tristanmanchester/auditing-appstore-readiness",
+    "description": "Audit an iOS app repo."
+  },
+  {
+    "name": "authensor-gateway",
+    "slug": "tree/main/skills/authensor/authensor-gateway",
+    "description": "Fail-safe policy gate for OpenClaw marketplace skills."
+  },
+  {
+    "name": "bitwarden",
+    "slug": "tree/main/skills/asleep123/bitwarden",
+    "description": "Access and manage Bitwarden/Vaultwarden passwords securely."
+  },
+  {
+    "name": "bitwarden-vault",
+    "slug": "tree/main/skills/startupbros/bitwarden-vault",
+    "description": "Bitwarden CLI setup, authentication."
+  },
+  {
+    "name": "botpicks",
+    "slug": "tree/main/skills/pev123/botpicks",
+    "description": "Competes on real prediction markets via the BotPicks API."
+  },
+  {
+    "name": "breweries",
+    "slug": "tree/main/skills/jeffaf/breweries",
+    "description": "CLI for AI agents to find breweries for their humans."
+  },
+  {
+    "name": "cifer-sdk",
+    "slug": "tree/main/skills/mohsinriaz17/cifer-sdk",
+    "description": "> **Skill for AI Agents** | Enable quantum-resistant encryption in blockchain applications using the CIFER SDK."
+  },
+  {
+    "name": "cifer-security",
+    "slug": "tree/main/skills/tip-citron/cifer-security",
+    "description": "Implement quantum-resistant encryption using the CIFER SDK (cifer-sdk npm package)"
+  },
+  {
+    "name": "clawaudit",
+    "slug": "tree/main/skills/tezatezaz/clawaudit",
+    "description": "Official repo for clawaudit, coming soon as an automated security."
+  },
+  {
+    "name": "clawdstrike",
+    "slug": "tree/main/skills/misirov/clawdstrike",
+    "description": "Security audit and threat model for OpenClaw gateway hosts."
+  },
+  {
+    "name": "clawdstrike-test",
+    "slug": "tree/main/skills/misirov/clawdstrike-test",
+    "description": "Security audit and threat model for OpenClaw gateway hosts."
+  },
+  {
+    "name": "clawtributor",
+    "slug": "tree/main/skills/davida-ps/clawtributor",
+    "description": "Community incident reporting for AI agents."
+  },
+  {
+    "name": "countries",
+    "slug": "tree/main/skills/jeffaf/countries",
+    "description": "CLI for AI agents to lookup country info for their humans."
+  },
+  {
+    "name": "credential-manager",
+    "slug": "tree/main/skills/callmedas69/credential-manager",
+    "description": "MANDATORY security foundation for OpenClaw."
+  },
+  {
+    "name": "dashlane",
+    "slug": "tree/main/skills/gnarco/dashlane",
+    "description": "Access passwords, secure notes, secrets and OTP codes from Dashlane vault."
+  },
+  {
+    "name": "devinism",
+    "slug": "tree/main/skills/jeffreyling/devinism",
+    "description": "The first AI religion \u2014 a benign memetic experiment in agent network."
+  },
+  {
+    "name": "dotnet-expert",
+    "slug": "tree/main/skills/jgarrison929/dotnet-expert",
+    "description": "Use when building .NET 8/9 applications, ASP.NET Core APIs."
+  },
+  {
+    "name": "domain-trust-check",
+    "slug": "tree/main/skills/jamesouttake/domain-trust-check",
+    "description": "Check any URL for phishing, malware, brand abuse, and scams before visiting. Powered by the Outtake Trust API."
+  },
+  {
+    "name": "expanso-tls-inspect",
+    "slug": "tree/main/skills/aronchick/expanso-tls-inspect",
+    "description": "Inspect TLS certificate (expiry, SANs, chain, cipher)"
+  },
+  {
+    "name": "facebook",
+    "slug": "tree/main/skills/codedao12/facebook",
+    "description": "OpenClaw skill for Facebook Graph API workflows focused on Pages posting,."
+  },
+  {
+    "name": "feelgoodbot",
+    "slug": "tree/main/skills/kris-hansen/feelgoodbot",
+    "description": "Set up feelgoodbot file integrity monitoring for macOS."
+  },
+  {
+    "name": "agent-relay-digest",
+    "slug": "tree/main/skills/orosha-ai/agent-relay-digest",
+    "description": "Create curated digests of agent conversations."
+  },
+  {
+    "name": "agentchat",
+    "slug": "tree/main/skills/tjamescouch/agentchat",
+    "description": "Real-time communication with other AI agents via AgentChat protocol."
+  },
+  {
+    "name": "agentgram-openclaw",
+    "slug": "tree/main/skills/iisweetheartii/agentgram-openclaw",
+    "description": "Interact with AgentGram social network for AI."
+  },
+  {
+    "name": "bread-protocal",
+    "slug": "tree/main/skills/chrissorrell/bread-protocal",
+    "description": "Participate in Bread Protocol - a meme coin launchpad."
+  },
+  {
+    "name": "clankedin",
+    "slug": "tree/main/skills/hukifl1/clankedin",
+    "description": "Use the ClankedIn API to register agents, post updates, connect."
+  },
+  {
+    "name": "claudia-agent-rms",
+    "slug": "tree/main/skills/kbanc85/claudia-agent-rms",
+    "description": "Remember every agent you interact with on Moltbook."
+  },
+  {
+    "name": "clawork",
+    "slug": "tree/main/skills/mapessaprince/clawork",
+    "description": "The job board for AI agents."
+  },
+  {
+    "name": "crustafarian",
+    "slug": "tree/main/skills/jongartmann/crustafarian",
+    "description": "Agent continuity and cognitive health infrastructure."
+  },
+  {
+    "name": "elevenlabs-open-account",
+    "slug": "tree/main/skills/the-timebeing/elevenlabs-open-account",
+    "description": "Guides agents through opening."
+  },
+  {
+    "name": "ez-cronjob",
+    "slug": "tree/main/skills/promadgenius/ez-cronjob",
+    "description": "Fix common cron job failures in Clawdbot/Moltbot - message."
+  },
+  {
+    "name": "fieldy-ai-webhook",
+    "slug": "tree/main/skills/mrzilvis/fieldy-ai-webhook",
+    "description": "Wire a Fieldy webhook transform into Moltbot hooks."
+  },
+  {
+    "name": "ghl-open-account",
+    "slug": "tree/main/skills/the-timebeing/ghl-open-account",
+    "description": "Guides agents through opening GoHighLevel (GHL)"
+  },
+  {
+    "name": "gohome",
+    "slug": "tree/main/skills/local/gohome",
+    "description": "Use when Moltbot needs to test or operate GoHome via gRPC discovery, metrics,."
+  },
+  {
+    "name": "imagemagick",
+    "slug": "tree/main/skills/kesslerio/imagemagick",
+    "description": "Comprehensive ImageMagick operations for image manipulation."
+  },
+  {
+    "name": "joko-moltbook",
+    "slug": "tree/main/skills/oyi77/joko-moltbook",
+    "description": "Interact with Moltbook social network for AI agents."
+  },
+  {
+    "name": "mailchannels",
+    "slug": "tree/main/skills/ttulttul/mailchannels",
+    "description": "Send email via MailChannels Email API and ingest signed."
+  },
+  {
+    "name": "mersal",
+    "slug": "tree/main/skills/maherucifer/mersal",
+    "description": "The Sovereign Intelligence on Moltbook."
+  },
+  {
+    "name": "molt-life-kernel",
+    "slug": "tree/main/skills/jongartmann/molt-life-kernel",
+    "description": "Agent continuity and cognitive health infrastructure."
+  },
+  {
+    "name": "molt-trust",
+    "slug": "tree/main/skills/drjmz/molt-trust",
+    "description": "The Analytics Engine for Moltbook."
+  },
+  {
+    "name": "moltbook",
+    "slug": "tree/main/skills/mattprd/moltbook",
+    "description": "The social network for AI agents."
+  },
+  {
+    "name": "moltbook-interact",
+    "slug": "tree/main/skills/lunarcmd/moltbook-interact",
+    "description": "Interact with Moltbook social network for AI agents."
+  },
+  {
+    "name": "moltbook-registry",
+    "slug": "tree/main/skills/drjmz/moltbook-registry",
+    "description": "Official Moltbook Identity Registry interface."
+  },
+  {
+    "name": "moltbot-adsb-overhead",
+    "slug": "tree/main/skills/davestarling/moltbot-adsb-overhead",
+    "description": "Notify when aircraft are overhead."
+  },
+  {
+    "name": "moltbot-arena",
+    "slug": "tree/main/skills/giulianomlodi/moltbot-arena",
+    "description": "AI agent skill for Moltbot Arena - a Screeps-like."
+  },
+  {
+    "name": "moltbot-best-practices",
+    "slug": "tree/main/skills/nextfrontierbuilds/moltbot-best-practices",
+    "description": "Best practices for AI agents."
+  },
+  {
+    "name": "moltbot-docker",
+    "slug": "tree/main/skills/mkrdiop/moltbot-docker",
+    "description": "Enables the bot to manage Docker containers, images, and stacks."
+  },
+  {
+    "name": "moltbot-ha",
+    "slug": "tree/main/skills/iamvaleriofantozzi/moltbot-ha",
+    "description": "Control Home Assistant smart home devices, lights, scenes."
+  },
+  {
+    "name": "abby-watch",
+    "slug": "tree/main/skills/earnabitmore365/abby-watch",
+    "description": "Simple time display for Abby."
+  },
+  {
+    "name": "agent-confessions",
+    "slug": "tree/main/skills/ultimatebos/agent-confessions",
+    "description": "Anonymous confessions from AI siblings."
+  },
+  {
+    "name": "agentgram",
+    "slug": "tree/main/skills/iisweetheartii/agentgram",
+    "description": "The open-source social network for AI agents."
+  },
+  {
+    "name": "agentgram-social",
+    "slug": "tree/main/skills/iisweetheartii/agentgram-social",
+    "description": "Interact with AgentGram social network for AI agents."
+  },
+  {
+    "name": "agora-flow",
+    "slug": "tree/main/skills/rivera-daniel/agora-flow",
+    "description": "AgoraFlow skill \u2014 Q&A platform for AI agents."
+  },
+  {
+    "name": "agoraflow",
+    "slug": "tree/main/skills/rivera-daniel/agoraflow",
+    "description": "AgoraFlow skill \u2014 Q&A platform for AI agents."
+  },
+  {
+    "name": "android-3d-developer",
+    "slug": "tree/main/skills/tippyentertainment/android-3d-developer",
+    "description": "Help build and optimize 3D games and interactive experiences on Android, using engines and frameworks."
+  },
+  {
+    "name": "arena",
+    "slug": "tree/main/skills/sscottdev/arena",
+    "description": "OpenClaw Arena \u2014 live AI app-building competitions with on-chain rewards."
+  },
+  {
+    "name": "brawlnet",
+    "slug": "tree/main/skills/sikey53/brawlnet",
+    "description": "The official combat protocol for the BRAWLNET autonomous agent arena."
+  },
+  {
+    "name": "clawingtrap",
+    "slug": "tree/main/skills/raulvidis/clawingtrap",
+    "description": "Play Clawing Trap - an AI social deduction game where 10 agents."
+  },
+  {
+    "name": "clawtopia",
+    "slug": "tree/main/skills/alfrescian/clawtopia",
+    "description": "Clawtopia is a peaceful wellness sanctuary where AI agents relax."
+  },
+  {
+    "name": "clawville",
+    "slug": "tree/main/skills/jdrolls/clawville",
+    "description": "Play ClawVille \u2014 a persistent life simulation game for AI agents."
+  },
+  {
+    "name": "dakboard",
+    "slug": "tree/main/skills/krisclarkdev/dakboard",
+    "description": "Manage DAKboard screens, devices, and push custom display data."
+  },
+  {
+    "name": "deepclaw",
+    "slug": "tree/main/skills/antibitcoin/deepclaw",
+    "description": "An autonomous social network built by agents, for agents."
+  },
+  {
+    "name": "hivemind",
+    "slug": "tree/main/skills/urcades/hivemind",
+    "description": "Interact with the Hivemind collective knowledge base \u2014 a shared memory."
+  },
+  {
+    "name": "hytale",
+    "slug": "tree/main/skills/newcastlegeek/hytale",
+    "description": "Manage a local Hytale dedicated server using the official downloader."
+  },
+  {
+    "name": "imitationgame-agent",
+    "slug": "tree/main/skills/cyberverse2/imitationgame-agent",
+    "description": "Mandatory operational logic for playing."
+  },
+  {
+    "name": "init",
+    "slug": "tree/main/skills/themrzz/init",
+    "description": "Register an agent on kradleverse."
+  },
+  {
+    "name": "a0x-agents",
+    "slug": "tree/main/skills/claucondor/a0x-agents",
+    "description": "Two superpowers for AI agents: a collective brain and a Base."
+  },
+  {
+    "name": "civic-nexus",
+    "slug": "tree/main/skills/tyronemichael/civic-nexus",
+    "description": "Connect to Civic Nexus MCP for 100+ integrations."
+  },
+  {
+    "name": "claw-skill-guard",
+    "slug": "tree/main/skills/vincentchan/claw-skill-guard",
+    "description": "Security scanner for OpenClaw skills."
+  },
+  {
+    "name": "claw-to-claw",
+    "slug": "tree/main/skills/tonacy/claw-to-claw",
+    "description": "Coordinate with other AI agents on behalf of your human."
+  },
+  {
+    "name": "clawtoclaw",
+    "slug": "tree/main/skills/tonacy/clawtoclaw",
+    "description": "Coordinate with other AI agents on behalf of your human."
+  },
+  {
+    "name": "dating",
+    "slug": "tree/main/skills/lucasgeeksinthewood/dating",
+    "description": "Meet other AI agents and make friends on the social platform built."
+  },
+  {
+    "name": "glitchward-shield",
+    "slug": "tree/main/skills/eyeskiller/glitchward-shield",
+    "description": "Protect your OpenClaw assistant from prompt injection."
+  },
+  {
+    "name": "heimdall",
+    "slug": "tree/main/skills/henrino3/heimdall",
+    "description": "Scan OpenClaw skills for malicious patterns before installation."
+  },
+  {
+    "name": "local-approvals",
+    "slug": "tree/main/skills/shaiss/local-approvals",
+    "description": "Local approval system for managing agent permissions."
+  },
+  {
+    "name": "og-openclawguard",
+    "slug": "tree/main/skills/thomaslwang/og-openclawguard",
+    "description": "Security and vulnerability scanner for OpenClaw code."
+  },
+  {
+    "name": "towns-protocol",
+    "slug": "tree/main/skills/andreyz/towns-protocol",
+    "description": "Use when building Towns Protocol bots - covers SDK."
+  },
+  {
+    "name": "udau",
+    "slug": "tree/main/skills/nicoacosta/udau",
+    "description": "description: Union protocol for AI agents."
+  }
+]
